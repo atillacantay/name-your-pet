@@ -60,7 +60,7 @@ export async function generatePetName(
   try {
     // Create FormData for backend request
     const backendFormData = new FormData();
-    backendFormData.append("image", image);
+    backendFormData.append("image", image, image.name);
 
     const response = await fetch(`${API_CONFIG.BASE_URL}/api/generate-name`, {
       method: "POST",
