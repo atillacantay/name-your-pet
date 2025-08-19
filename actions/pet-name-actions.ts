@@ -65,9 +65,6 @@ export async function generatePetName(
     const response = await fetch(`${API_CONFIG.BASE_URL}/api/generate-name`, {
       method: "POST",
       body: backendFormData,
-      headers: {
-        "Content-Type": "multipart/form-data",
-      },
     });
 
     if (!response.ok) {
