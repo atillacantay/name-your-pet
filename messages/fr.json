@@ -1,0 +1,76 @@
+{
+  "Header": {
+    "title": "Générateur de Noms d'Animaux",
+    "description": "Téléchargez une photo de votre adorable animal et laissez notre IA suggérer les noms parfaits. Notre système analyse l'apparence de votre animal pour créer des suggestions personnalisées."
+  },
+  "EmptyState": {
+    "title": "Téléchargez une photo pour commencer !",
+    "description": "Le nom parfait de votre animal est à un seul téléchargement."
+  },
+  "ResultsDisplay": {
+    "title": "Noms parfaits pour votre animal !",
+    "aiAnalysisTitle": "Analyse IA:",
+    "suggestedNamesTitle": "Noms suggérés:",
+    "tryAnotherButton": "Essayer une autre photo"
+  },
+  "FeaturesSection": {
+    "aiAnalysis": {
+      "title": "Analyse pilotée par l'IA",
+      "description": "Notre IA avancée analyse la photo de votre animal pour comprendre ses caractéristiques uniques."
+    },
+    "personalizedNames": {
+      "title": "Noms personnalisés",
+      "description": "Obtenez des suggestions de noms sur mesure qui correspondent à l'apparence et à la personnalité de votre animal."
+    },
+    "instantResults": {
+      "title": "Résultats instantanés",
+      "description": "Recevez plusieurs suggestions créatives en quelques secondes, prêtes pour votre nouveau compagnon."
+    }
+  },
+  "Metadata": {
+    "title": "Générateur de Noms d'Animaux - Nommage assisté par IA",
+    "description": "Téléchargez une photo de votre animal et obtenez des suggestions de noms personnalisées par l'IA.",
+    "keywords": "noms animaux, noms chiens, noms chats, IA noms animaux, générateur de noms",
+    "openGraph": {
+      "title": "Générateur de Noms d'Animaux - Nommage assisté par IA",
+      "description": "Téléchargez une photo de votre animal et obtenez des suggestions de noms personnalisées par l'IA.",
+      "siteName": "Générateur de Noms d'Animaux"
+    }
+  },
+  "ImageUpload": {
+    "label": "Téléchargez la photo de votre animal",
+    "changeButton": "Changer l'image",
+    "dropText": "Déposez votre image ici !",
+    "clickText": "Cliquez pour télécharger ou glissez-déposez",
+    "fileInfo": "{extensions} jusqu'à {maxSize}MB",
+    "errors": {
+      "invalidFileType": "Type de fichier invalide. Veuillez télécharger une image.",
+      "fileTooLarge": "Le fichier est trop volumineux. La taille maximale est de {maxSize}MB."
+    }
+  },
+  "SubmitButton": {
+    "loading": "Génération des noms...",
+    "default": "Générer des noms pour animaux"
+  },
+  "LocaleSwitcher": {
+    "en": "English",
+    "tr": "Türkçe",
+    "es": "Español",
+    "fr": "Français",
+    "de": "Deutsch",
+    "zh": "中文",
+    "selectLanguage": "Langue"
+  },
+  "PetNameForm": {
+    "errors": {
+      "noImage": "Veuillez sélectionner une image de votre animal pour générer des noms.",
+      "generateFailed": "Échec de la génération des noms. Veuillez réessayer.",
+      "unexpectedError": "Une erreur inattendue est survenue. Veuillez réessayer.",
+      "networkError": "Erreur réseau. Vérifiez votre connexion et réessayez.",
+      "rateLimited": "Trop de requêtes. Veuillez patienter et réessayer.",
+      "recaptchaFailed": "La vérification reCAPTCHA a échoué. Veuillez réessayer.",
+      "invalidFileType": "Type de fichier invalide. Veuillez télécharger une image.",
+      "fileTooLarge": "Le fichier est trop volumineux. Max {maxSize}MB."
+    }
+  }
+}

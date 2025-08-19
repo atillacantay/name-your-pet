@@ -1,0 +1,80 @@
+{
+  "Header": {
+    "title": "Evcil Hayvan İsim Üreticisi",
+    "description": "Sevimli evcil hayvanınızın fotoğrafını yükleyin ve AI'mızın mükemmel isimler önermesine izin verin! Akıllı sistemimiz evcil hayvanınızın görünümünü analiz ederek kişiselleştirilmiş isim önerileri oluşturur."
+  },
+  "EmptyState": {
+    "title": "Başlamak için bir fotoğraf yükleyin!",
+    "description": "Evcil hayvanınızın mükemmel ismi sadece bir yükleme uzağınızda."
+  },
+  "ResultsDisplay": {
+    "title": "Evcil Hayvanınız İçin Mükemmel İsimler!",
+    "aiAnalysisTitle": "AI Analizi:",
+    "suggestedNamesTitle": "Önerilen İsimler:",
+    "tryAnotherButton": "Başka Fotoğraf Deneyin"
+  },
+  "FeaturesSection": {
+    "aiAnalysis": {
+      "title": "AI Destekli Analiz",
+      "description": "Gelişmiş AI teknolojimiz evcil hayvanınızın fotoğrafını analiz ederek benzersiz özelliklerini anlar."
+    },
+    "personalizedNames": {
+      "title": "Kişiselleştirilmiş İsimler",
+      "description": "Evcil hayvanınızın görünümü ve kişiliğine uygun özel isim önerileri alın."
+    },
+    "instantResults": {
+      "title": "Anında Sonuçlar",
+      "description": "Yeni arkadaşınız için saniyeler içinde birden fazla yaratıcı isim önerisi alın."
+    }
+  },
+  "Metadata": {
+    "title": "Evcil Hayvan İsim Üreticisi - AI Destekli İsim Önerisi",
+    "description": "Evcil hayvanınızın fotoğrafını yükleyin ve AI destekli kişiselleştirilmiş isim önerileri alın. Köpekler, kediler ve tüm sevgili evcil hayvanlarınız için mükemmel isimler.",
+    "keywords": "evcil hayvan isimleri, köpek isimleri, kedi isimleri, AI evcil hayvan isimlendirme, evcil hayvan isim üreticisi, hayvan isimleri, evcil hayvan foto analizi",
+    "openGraph": {
+      "title": "Evcil Hayvan İsim Üreticisi - AI Destekli İsim Önerisi",
+      "description": "Evcil hayvanınızın fotoğrafını yükleyin ve AI destekli kişiselleştirilmiş isim önerileri alın. Köpekler, kediler ve tüm sevgili evcil hayvanlarınız için mükemmel isimler.",
+      "siteName": "Evcil Hayvan İsim Üreticisi"
+    },
+    "twitter": {
+      "title": "Evcil Hayvan İsim Üreticisi - AI Destekli İsim Önerisi",
+      "description": "Evcil hayvanınızın fotoğrafını yükleyin ve AI destekli kişiselleştirilmiş isim önerileri alın. Köpekler, kediler ve tüm sevgili evcil hayvanlarınız için mükemmel isimler."
+    }
+  },
+  "ImageUpload": {
+    "label": "Evcil Hayvanınızın Fotoğrafını Yükleyin",
+    "changeButton": "Fotoğrafı Değiştir",
+    "dropText": "Fotoğrafınızı buraya bırakın!",
+    "clickText": "Yüklemek için tıklayın veya sürükleyip bırakın",
+    "fileInfo": "{extensions} - maksimum {maxSize}MB",
+    "errors": {
+      "invalidFileType": "Geçersiz dosya türü. Lütfen bir resim yükleyin.",
+      "fileTooLarge": "Dosya çok büyük. Maksimum boyut {maxSize}MB."
+    }
+  },
+  "SubmitButton": {
+    "loading": "İsimler Oluşturuluyor...",
+    "default": "Evcil Hayvan İsimlerini Oluştur"
+  },
+  "LocaleSwitcher": {
+    "en": "English",
+    "tr": "Türkçe",
+    "es": "Español",
+    "fr": "Français",
+    "de": "Deutsch",
+    "zh": "中文",
+    "selectLanguage": "Dil"
+  },
+  "PetNameForm": {
+    "errors": {
+      "noImage": "İsim üretmek için lütfen evcil hayvanınızın fotoğrafını seçin.",
+      "generateFailed": "Evcil hayvan isimleri üretilemedi. Lütfen tekrar deneyin.",
+      "unexpectedError": "Beklenmeyen bir hata oluştu. Lütfen tekrar deneyin.",
+      "networkError": "Ağ hatası. Lütfen bağlantınızı kontrol edin ve tekrar deneyin.",
+      "rateLimited": "Çok fazla istek. Lütfen biraz bekleyin ve tekrar deneyin.",
+      "recaptchaFailed": "reCAPTCHA doğrulaması başarısız. Lütfen tekrar deneyin.",
+      "invalidFileType": "Geçersiz dosya türü. Lütfen bir resim yükleyin.",
+      "fileTooLarge": "Dosya çok büyük. Maksimum boyut {maxSize}MB."
+    }
+  }
+}

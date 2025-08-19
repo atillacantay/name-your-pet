@@ -1,0 +1,80 @@
+{
+  "Header": {
+    "title": "Generador de Nombres para Mascotas",
+    "description": "Sube una foto de tu adorable mascota y deja que nuestra IA sugiera los nombres perfectos. Nuestro sistema analiza la apariencia de tu mascota para crear sugerencias personalizadas."
+  },
+  "EmptyState": {
+    "title": "¡Sube una foto para empezar!",
+    "description": "El nombre perfecto de tu mascota está a solo una subida de distancia."
+  },
+  "ResultsDisplay": {
+    "title": "¡Nombres perfectos para tu mascota!",
+    "aiAnalysisTitle": "Análisis de IA:",
+    "suggestedNamesTitle": "Nombres sugeridos:",
+    "tryAnotherButton": "Probar otra foto"
+  },
+  "FeaturesSection": {
+    "aiAnalysis": {
+      "title": "Análisis impulsado por IA",
+      "description": "Nuestra avanzada IA analiza la foto de tu mascota para entender sus características únicas."
+    },
+    "personalizedNames": {
+      "title": "Nombres personalizados",
+      "description": "Obtén sugerencias de nombres a medida que coincidan con la apariencia y personalidad de tu mascota."
+    },
+    "instantResults": {
+      "title": "Resultados instantáneos",
+      "description": "Recibe múltiples sugerencias creativas en segundos, listas para tu nuevo compañero."
+    }
+  },
+  "Metadata": {
+    "title": "Generador de Nombres para Mascotas - Nombres con IA",
+    "description": "Sube una foto de tu mascota y obtén sugerencias de nombres personalizadas impulsadas por IA. Nombres perfectos para perros, gatos y todas tus queridas mascotas.",
+    "keywords": "nombres para mascotas, nombres de perros, nombres de gatos, IA nombres mascotas, generador de nombres, análisis de foto de mascota",
+    "openGraph": {
+      "title": "Generador de Nombres para Mascotas - Nombres con IA",
+      "description": "Sube una foto de tu mascota y obtén sugerencias de nombres personalizadas impulsadas por IA.",
+      "siteName": "Generador de Nombres para Mascotas"
+    },
+    "twitter": {
+      "title": "Generador de Nombres para Mascotas - Nombres con IA",
+      "description": "Sube una foto de tu mascota y obtén sugerencias de nombres personalizadas impulsadas por IA."
+    }
+  },
+  "ImageUpload": {
+    "label": "Sube la foto de tu mascota",
+    "changeButton": "Cambiar imagen",
+    "dropText": "¡Suelta tu imagen aquí!",
+    "clickText": "Haz clic para subir o arrastra y suelta",
+    "fileInfo": "{extensions} hasta {maxSize}MB",
+    "errors": {
+      "invalidFileType": "Tipo de archivo inválido. Por favor sube una imagen.",
+      "fileTooLarge": "El archivo es demasiado grande. El tamaño máximo es {maxSize}MB."
+    }
+  },
+  "SubmitButton": {
+    "loading": "Generando nombres...",
+    "default": "Generar nombres para mascotas"
+  },
+  "LocaleSwitcher": {
+    "en": "English",
+    "tr": "Türkçe",
+    "es": "Español",
+    "fr": "Français",
+    "de": "Deutsch",
+    "zh": "中文",
+    "selectLanguage": "Idioma"
+  },
+  "PetNameForm": {
+    "errors": {
+      "noImage": "Por favor selecciona una imagen de tu mascota para generar nombres.",
+      "generateFailed": "No se pudieron generar nombres. Por favor intenta de nuevo.",
+      "unexpectedError": "Ocurrió un error inesperado. Por favor intenta de nuevo.",
+      "networkError": "Error de red. Revisa tu conexión y vuelve a intentarlo.",
+      "rateLimited": "Demasiadas solicitudes. Espera un momento e inténtalo de nuevo.",
+      "recaptchaFailed": "La verificación reCAPTCHA falló. Por favor intenta de nuevo.",
+      "invalidFileType": "Tipo de archivo inválido. Por favor sube una imagen.",
+      "fileTooLarge": "El archivo es demasiado grande. Máximo {maxSize}MB."
+    }
+  }
+}

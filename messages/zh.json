@@ -1,0 +1,75 @@
+{
+  "Header": {
+    "title": "宠物起名生成器",
+    "description": "上传你可爱宠物的照片，让我们的 AI 建议完美的名字！我们的系统会分析宠物的外观以生成个性化的名字建议。"
+  },
+  "EmptyState": {
+    "title": "上传照片开始！",
+    "description": "你的宠物完美的名字只需一次上传即可。"
+  },
+  "ResultsDisplay": {
+    "title": "为你的宠物提供完美的名字！",
+    "aiAnalysisTitle": "AI 分析：",
+    "suggestedNamesTitle": "建议的名字：",
+    "tryAnotherButton": "再试一张照片"
+  },
+  "FeaturesSection": {
+    "aiAnalysis": {
+      "title": "AI 驱动分析",
+      "description": "我们的高级 AI 会分析你宠物的照片，以了解其独特特征。"
+    },
+    "personalizedNames": {
+      "title": "个性化名字",
+      "description": "获取与宠物外观和个性相匹配的定制名字建议。"
+    },
+    "instantResults": {
+      "title": "即时结果",
+      "description": "在几秒钟内收到多个创意名字建议，准备好迎接你的新伙伴。"
+    }
+  },
+  "Metadata": {
+    "title": "宠物起名生成器 - AI 助力宠物命名",
+    "description": "上传宠物照片，获取 AI 助力的个性化名字建议。适用于狗、猫及所有你心爱的宠物。",
+    "keywords": "宠物名字, 狗名, 猫名, AI 宠物命名, 名字生成器, 宠物照片分析",
+    "openGraph": {
+      "title": "宠物起名生成器 - AI 助力宠物命名",
+      "description": "上传宠物照片，获取 AI 助力的个性化名字建议。"
+    }
+  },
+  "ImageUpload": {
+    "label": "上传你的宠物照片",
+    "changeButton": "更改图片",
+    "dropText": "将你的图片拖放到这里！",
+    "clickText": "点击上传或拖放",
+    "fileInfo": "{extensions} 最大 {maxSize}MB",
+    "errors": {
+      "invalidFileType": "无效的文件类型。请上传图片。",
+      "fileTooLarge": "文件过大。最大大小为 {maxSize}MB。"
+    }
+  },
+  "SubmitButton": {
+    "loading": "正在生成名字...",
+    "default": "生成宠物名字"
+  },
+  "LocaleSwitcher": {
+    "en": "English",
+    "tr": "Türkçe",
+    "es": "Español",
+    "fr": "Français",
+    "de": "Deutsch",
+    "zh": "中文",
+    "selectLanguage": "语言"
+  },
+  "PetNameForm": {
+    "errors": {
+      "noImage": "请选择宠物的照片以生成名字。",
+      "generateFailed": "生成名字失败。请再试一次。",
+      "unexpectedError": "发生意外错误。请再试一次。",
+      "networkError": "网络错误。请检查你的连接并重试。",
+      "rateLimited": "请求过多。请稍候再试。",
+      "recaptchaFailed": "reCAPTCHA 验证失败。请再试一次。",
+      "invalidFileType": "无效的文件类型。请上传图片。",
+      "fileTooLarge": "文件过大。最大 {maxSize}MB。"
+    }
+  }
+}
