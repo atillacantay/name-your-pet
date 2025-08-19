@@ -27,7 +27,7 @@ export default function ResultsDisplay({
         <h3 className="font-semibold text-gray-700 mb-3">
           {t("aiAnalysisTitle")}
         </h3>
-        <p className="text-gray-600 italic">"{result.analysis}"</p>
+        <p className="text-gray-600 italic">{result.analysis}</p>
       </div>
 
       <div>
