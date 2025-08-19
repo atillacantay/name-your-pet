@@ -33,6 +33,11 @@
     "keywords": "宠物名字, 狗名, 猫名, AI 宠物命名, 名字生成器, 宠物照片分析",
     "openGraph": {
       "title": "宠物起名生成器 - AI 助力宠物命名",
+      "description": "上传宠物照片，获取 AI 助力的个性化名字建议。",
+      "siteName": "宠物起名生成器"
+    },
+    "twitter": {
+      "title": "宠物起名生成器 - AI 助力宠物命名",
       "description": "上传宠物照片，获取 AI 助力的个性化名字建议。"
     }
   },

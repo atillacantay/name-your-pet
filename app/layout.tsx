@@ -64,14 +64,12 @@ export async function generateMetadata(): Promise<Metadata> {
       canonical: "/",
       languages: {
         en: "/",
-        tr: "/tr",
       },
     },
     category: "technology",
     metadataBase: new URL(
       process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"
     ),
-    manifest: "/manifest.json",
   };
 }
 

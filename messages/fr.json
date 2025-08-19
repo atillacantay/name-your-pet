@@ -35,6 +35,10 @@
       "title": "Générateur de Noms d'Animaux - Nommage assisté par IA",
       "description": "Téléchargez une photo de votre animal et obtenez des suggestions de noms personnalisées par l'IA.",
       "siteName": "Générateur de Noms d'Animaux"
+    },
+    "twitter": {
+      "title": "Générateur de Noms d'Animaux - Nommage assisté par IA",
+      "description": "Téléchargez une photo de votre animal et obtenez des suggestions de noms personnalisées par l'IA."
     }
   },
   "ImageUpload": {

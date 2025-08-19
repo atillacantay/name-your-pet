@@ -38,8 +38,7 @@ export default function ResultsDisplay({
           {result.names.map((name, index) => (
             <div
               key={index}
-              className="bg-gradient-to-r from-purple-50 to-pink-50 border border-purple-200 
-                       rounded-lg p-4 text-center transform hover:scale-105 transition-transform"
+              className="bg-gradient-to-r from-purple-50 to-pink-50 border border-purple-200 rounded-lg p-4 text-center transform hover:scale-105 transition-transform"
             >
               <span className="text-lg font-semibold text-purple-700">
                 {name}
@@ -51,8 +50,7 @@ export default function ResultsDisplay({
 
       <button
         onClick={onReset}
-        className="w-full bg-gray-100 text-gray-700 font-medium py-3 px-6 rounded-xl 
-                 hover:bg-gray-200 transition-colors"
+        className="w-full bg-gray-100 text-gray-700 font-medium py-3 px-6 rounded-xl hover:bg-gray-200 transition-colors"
       >
         {t("tryAnotherButton")}
       </button>

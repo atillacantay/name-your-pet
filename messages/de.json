@@ -30,11 +30,15 @@
   "Metadata": {
     "title": "Haustier Namensgenerator - KI-gestützte Namensgebung",
     "description": "Laden Sie ein Foto Ihres Haustiers hoch und erhalten Sie personalisierte Namensvorschläge, die von KI unterstützt werden.",
-    "keywords": "haustiernamen, hundenamen, katzennamen, ki namensgebung",
+    "keywords": "haustiernamen, hundenamen, katzennamen, ki namensgebung, namensgenerator, tierfotoanalyse",
     "openGraph": {
       "title": "Haustier Namensgenerator - KI-gestützte Namensgebung",
       "description": "Laden Sie ein Foto Ihres Haustiers hoch und erhalten Sie personalisierte Namensvorschläge, die von KI unterstützt werden.",
       "siteName": "Haustier Namensgenerator"
+    },
+    "twitter": {
+      "title": "Haustier Namensgenerator - KI-gestützte Namensgebung",
+      "description": "Laden Sie ein Foto Ihres Haustiers hoch und erhalten Sie personalisierte Namensvorschläge, die von KI unterstützt werden."
     }
   },
   "ImageUpload": {
