@@ -10,6 +10,11 @@ const nextConfig: NextConfig = {
   images: {
     domains: ["localhost"],
   },
+  experimental: {
+    serverActions: {
+      bodySizeLimit: "10mb",
+    },
+  },
 };
 
 const withNextIntl = createNextIntlPlugin();
