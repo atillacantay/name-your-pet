@@ -1,6 +1,5 @@
 "use client";
 
-import { generatePetName } from "@/actions/pet-name-actions";
 import { useTranslations } from "next-intl";
 import React, { useState } from "react";
 import { RECAPTCHA_CONFIG } from "../app/config/recaptcha";
@@ -52,16 +51,26 @@ export default function PetNameForm({ onResult }: PetNameFormProps) {
         formData.append("recaptchaToken", token);
       }
 
-      const response = await generatePetName(formData);
+      // Call the API route directly
+      const response = await fetch("/api/generate-name", {
+        method: "POST",
+        body: formData,
+      });
 
-      if (response.success) {
+      if (!response.ok) {
+        throw new Error(`API request failed: ${response.status}`);
+      }
+
+      const result = await response.json();
+
+      if (result.success) {
         onResult({
-          names: response.names,
-          analysis: response.analysis,
-          message: response.message,
+          names: result.names,
+          analysis: result.analysis,
+          message: result.message,
         });
       } else {
-        const errorMessage = response.error || t("errors.generateFailed");
+        const errorMessage = result.error || t("errors.generateFailed");
         setError(errorMessage);
       }
     } catch (err) {
