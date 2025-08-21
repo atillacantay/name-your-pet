@@ -15,8 +15,6 @@ const nextConfig: NextConfig = {
       bodySizeLimit: "10mb",
     },
   },
-  htmlLimitedBots:
-    /googlebot|bingbot|slurp|duckduckbot|baiduspider|yandexbot|sogou|facebookexternalhit|twitterbot|rogerbot|linkedinbot|embedly|quora|showyoubot|outbrain|pinterest|developers\\.google\\.com/,
 };
 
 const withNextIntl = createNextIntlPlugin();
