@@ -66,6 +66,7 @@
     "selectLanguage": "Dil"
   },
   "PetNameForm": {
+    "successMessage": "Evcil hayvan isimleri başarıyla oluşturuldu!",
     "errors": {
       "noImage": "İsim üretmek için lütfen evcil hayvanınızın fotoğrafını seçin.",
       "generateFailed": "Evcil hayvan isimleri üretilemedi. Lütfen tekrar deneyin.",

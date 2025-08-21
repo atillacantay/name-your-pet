@@ -66,6 +66,7 @@
     "selectLanguage": "语言"
   },
   "PetNameForm": {
+    "successMessage": "宠物名字生成成功！",
     "errors": {
       "noImage": "请选择宠物的照片以生成名字。",
       "generateFailed": "生成名字失败。请再试一次。",

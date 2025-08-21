@@ -23,13 +23,6 @@ export default function ResultsDisplay({
         <p className="text-gray-600">{result.message}</p>
       </div>
 
-      <div className="bg-gray-50 rounded-xl p-6">
-        <h3 className="font-semibold text-gray-700 mb-3">
-          {t("aiAnalysisTitle")}
-        </h3>
-        <p className="text-gray-600 italic">{result.analysis}</p>
-      </div>
-
       <div>
         <h3 className="font-semibold text-gray-700 mb-4 text-center">
           {t("suggestedNamesTitle")}

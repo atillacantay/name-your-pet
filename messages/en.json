@@ -66,6 +66,7 @@
     "selectLanguage": "Language"
   },
   "PetNameForm": {
+    "successMessage": "Pet names generated successfully!",
     "errors": {
       "noImage": "Please select an image of your pet to generate names.",
       "generateFailed": "Failed to generate pet names. Please try again.",

@@ -1,13 +1,11 @@
 export interface GeneratedResult {
   names: string[];
-  analysis: string;
   message: string;
 }
 
 export interface PetNameResponse {
   success: boolean;
   names: string[];
-  analysis: string;
   message: string;
   error?: string;
 }

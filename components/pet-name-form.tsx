@@ -57,7 +57,6 @@ export default function PetNameForm({ onResult }: PetNameFormProps) {
       if (response.success) {
         onResult({
           names: response.names,
-          analysis: response.analysis,
           message: response.message,
         });
       } else {

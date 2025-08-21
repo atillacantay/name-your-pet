@@ -4,22 +4,22 @@ import { API_CONFIG } from "@/app/config/api";
 import { FILE_CONFIG } from "@/app/config/file";
 import { PetNameResponse } from "@/app/types";
 import { validateFileSize, validateFileType } from "@/utils/file-utils";
-import { getTranslations } from "next-intl/server";
+import { getLocale, getTranslations } from "next-intl/server";
 
 export async function generatePetName(
   formData: FormData
 ): Promise<PetNameResponse> {
-  const t = await getTranslations("PetNameForm.errors");
+  const t = await getTranslations("PetNameForm");
   const image = formData.get("image") as File;
   const recaptchaToken = formData.get("recaptchaToken") as string;
+  const locale = await getLocale();
 
   if (!recaptchaToken) {
     return {
       success: false,
       names: [],
-      analysis: "",
       message: "",
-      error: t("recaptchaFailed"),
+      error: t("errors.recaptchaFailed"),
     };
   }
 
@@ -27,9 +27,8 @@ export async function generatePetName(
     return {
       success: false,
       names: [],
-      analysis: "",
       message: "",
-      error: t("noImage"),
+      error: t("errors.noImage"),
     };
   }
 
@@ -37,9 +36,8 @@ export async function generatePetName(
     return {
       success: false,
       names: [],
-      analysis: "",
       message: "",
-      error: t("fileTooLarge", { maxSize: FILE_CONFIG.MAX_SIZE_MB }),
+      error: t("errors.fileTooLarge", { maxSize: FILE_CONFIG.MAX_SIZE_MB }),
     };
   }
 
@@ -47,32 +45,33 @@ export async function generatePetName(
     return {
       success: false,
       names: [],
-      analysis: "",
       message: "",
-      error: t("invalidFileType"),
+      error: t("errors.invalidFileType"),
     };
   }
 
   try {
-    const response = await fetch(`${API_CONFIG.BASE_URL}/api/generate-name`, {
-      method: "POST",
-      body: formData,
-    });
+    const response = await fetch(
+      `${API_CONFIG.BASE_URL}/api/generate-name?locale=${locale}`,
+      {
+        method: "POST",
+        body: formData,
+      }
+    );
 
     if (!response.ok) {
       throw new Error(`Backend request failed: ${response.status}`);
     }
 
     const result: PetNameResponse = await response.json();
-    return result;
+    return { ...result, message: t("successMessage") };
   } catch (error) {
     console.error("Error generating pet name:", error);
     return {
       success: false,
       names: [],
-      analysis: "",
       message: "",
-      error: t("generateFailed"),
+      error: t("errors.generateFailed"),
     };
   }
 }

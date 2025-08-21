@@ -66,6 +66,7 @@
     "selectLanguage": "Idioma"
   },
   "PetNameForm": {
+    "successMessage": "¡Nombres de mascotas generados con éxito!",
     "errors": {
       "noImage": "Por favor selecciona una imagen de tu mascota para generar nombres.",
       "generateFailed": "No se pudieron generar nombres. Por favor intenta de nuevo.",

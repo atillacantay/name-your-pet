@@ -14,8 +14,9 @@ export function LocaleSwitcher() {
   function handleValueChange(event: React.ChangeEvent<HTMLSelectElement>) {
     const newLocale = event.target.value as Locale;
 
-    startTransition(() => {
-      setCookiesLocale(newLocale);
+    startTransition(async () => {
+      await setCookiesLocale(newLocale);
+      window.location.reload();
     });
   }
 
