@@ -3,7 +3,6 @@ import PetNameGeneratorWrapper from "@/components/pet-name-generator-wrapper";
 import type { Metadata } from "next";
 import { getLocale, getTranslations } from "next-intl/server";
 import { baseUrl } from "./constants/common";
-import "./globals.css";
 
 export async function generateMetadata(): Promise<Metadata> {
   const t = await getTranslations("Metadata");
