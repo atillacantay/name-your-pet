@@ -1,60 +1,60 @@
 {
   "Header": {
     "title": "Pet Name Generator",
-    "description": "Upload a photo of your adorable pet and let our AI suggest the perfect names! Our smart system analyzes your pet's appearance to create personalized name suggestions."
+    "description": "Upload a photo of your pet and we’ll suggest names tailored to their look and personality. Fast, friendly, and made just for your companion."
   },
   "EmptyState": {
     "title": "Upload a photo to get started!",
-    "description": "Your pet's perfect name is just one upload away."
+    "description": "The perfect name could be just one upload away."
   },
   "ResultsDisplay": {
-    "title": "Perfect Names for Your Pet!",
-    "aiAnalysisTitle": "AI Analysis:",
-    "suggestedNamesTitle": "Suggested Names:",
-    "tryAnotherButton": "Try Another Photo"
+    "title": "Great name ideas for your pet",
+    "aiAnalysisTitle": "AI analysis:",
+    "suggestedNamesTitle": "Suggested names:",
+    "tryAnotherButton": "Try another photo"
   },
   "FeaturesSection": {
     "aiAnalysis": {
-      "title": "AI-Powered Analysis",
-      "description": "Our advanced AI analyzes your pet's photo to understand their unique characteristics."
+      "title": "Smart image analysis",
+      "description": "Our AI examines the photo to pick up on features and personality clues that inspire name ideas."
     },
     "personalizedNames": {
-      "title": "Personalized Names",
-      "description": "Get custom name suggestions that match your pet's appearance and personality."
+      "title": "Personalized suggestions",
+      "description": "Get name ideas that suit your pet’s appearance and character — playful, elegant, or unique."
     },
     "instantResults": {
-      "title": "Instant Results",
-      "description": "Receive multiple creative name suggestions in seconds, ready for your new companion."
+      "title": "Quick results",
+      "description": "Receive multiple creative name options in seconds, ready for your new friend."
     }
   },
   "Metadata": {
-    "title": "Pet Name Generator - AI-Powered Pet Naming",
-    "description": "Upload a photo of your pet and get personalized name suggestions powered by AI. Perfect names for dogs, cats, and all your beloved pets.",
+    "title": "Pet Name Generator — AI-powered pet naming",
+    "description": "Upload a photo of your pet and get personalized name suggestions powered by AI. Perfect for dogs, cats and other beloved companions.",
     "keywords": "pet names, dog names, cat names, AI pet naming, pet name generator, animal names, pet photo analysis",
     "openGraph": {
-      "title": "Pet Name Generator - AI-Powered Pet Naming",
-      "description": "Upload a photo of your pet and get personalized name suggestions powered by AI. Perfect names for dogs, cats, and all your beloved pets.",
+      "title": "Pet Name Generator — AI-powered pet naming",
+      "description": "Upload a photo and get tailored name suggestions for your pet.",
       "siteName": "Pet Name Generator"
     },
     "twitter": {
-      "title": "Pet Name Generator - AI-Powered Pet Naming",
-      "description": "Upload a photo of your pet and get personalized name suggestions powered by AI. Perfect names for dogs, cats, and all your beloved pets."
+      "title": "Pet Name Generator — AI pet naming",
+      "description": "Upload a photo of your pet and receive AI-powered name suggestions."
     }
   },
   "ImageUpload": {
-    "label": "Upload Your Pet's Photo",
-    "changeButton": "Change Image",
-    "dropText": "Drop your image here!",
+    "label": "Upload your pet’s photo",
+    "changeButton": "Change image",
+    "dropText": "Drop your image here",
     "clickText": "Click to upload or drag and drop",
-    "fileInfo": "{extensions} up to {maxSize}MB",
+    "fileInfo": "{extensions} — up to {maxSize}MB",
     "errors": {
       "invalidFileType": "Invalid file type. Please upload an image.",
       "fileTooLarge": "File is too large. Maximum size is {maxSize}MB."
     }
   },
   "SubmitButton": {
-    "loading": "Generating Names...",
-    "default": "Generate Pet Names"
+    "loading": "Finding names...",
+    "default": "Find names"
   },
   "LocaleSwitcher": {
     "en": "English",
@@ -63,15 +63,15 @@
     "fr": "Français",
     "de": "Deutsch",
     "zh": "中文",
-    "selectLanguage": "Language"
+    "selectLanguage": "Select language"
   },
   "PetNameForm": {
-    "successMessage": "Pet names generated successfully!",
+    "successMessage": "Great — pet names generated!",
     "errors": {
       "noImage": "Please select an image of your pet to generate names.",
-      "generateFailed": "Failed to generate pet names. Please try again.",
-      "unexpectedError": "An unexpected error occurred. Please try again.",
-      "networkError": "Network error. Please check your connection and try again.",
+      "generateFailed": "We couldn't generate names just now. Please try again.",
+      "unexpectedError": "Something went wrong. Please try again.",
+      "networkError": "Network error. Check your connection and try again.",
       "rateLimited": "Too many requests. Please wait a moment and try again.",
       "recaptchaFailed": "reCAPTCHA verification failed. Please try again.",
       "invalidFileType": "Invalid file type. Please upload an image.",

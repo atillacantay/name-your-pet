@@ -1,60 +1,60 @@
 {
   "Header": {
     "title": "Evcil Hayvan İsim Üreticisi",
-    "description": "Sevimli evcil hayvanınızın fotoğrafını yükleyin ve AI'mızın mükemmel isimler önermesine izin verin! Akıllı sistemimiz evcil hayvanınızın görünümünü analiz ederek kişiselleştirilmiş isim önerileri oluşturur."
+    "description": "Evcil hayvanınızın fotoğrafını yükleyin; görünümüne ve kişiliğine uygun isimler önereceğiz. Hızlı, samimi ve sizin dostunuza özel."
   },
   "EmptyState": {
-    "title": "Başlamak için bir fotoğraf yükleyin!",
-    "description": "Evcil hayvanınızın mükemmel ismi sadece bir yükleme uzağınızda."
+    "title": "Başlamak için fotoğraf yükleyin!",
+    "description": "Kusursuz isim sadece bir yükleme uzakta olabilir."
   },
   "ResultsDisplay": {
-    "title": "Evcil Hayvanınız İçin Mükemmel İsimler!",
-    "aiAnalysisTitle": "AI Analizi:",
-    "suggestedNamesTitle": "Önerilen İsimler:",
-    "tryAnotherButton": "Başka Fotoğraf Deneyin"
+    "title": "Evcil hayvanınız için harika isim fikirleri",
+    "aiAnalysisTitle": "AI analizi:",
+    "suggestedNamesTitle": "Önerilen isimler:",
+    "tryAnotherButton": "Başka fotoğraf dene"
   },
   "FeaturesSection": {
     "aiAnalysis": {
-      "title": "AI Destekli Analiz",
-      "description": "Gelişmiş AI teknolojimiz evcil hayvanınızın fotoğrafını analiz ederek benzersiz özelliklerini anlar."
+      "title": "Akıllı görüntü analizi",
+      "description": "AI'mız, uygun isim fikirleri üreten özellikleri ve kişilik ipuçlarını tespit etmek için fotoğrafı inceler."
     },
     "personalizedNames": {
-      "title": "Kişiselleştirilmiş İsimler",
-      "description": "Evcil hayvanınızın görünümü ve kişiliğine uygun özel isim önerileri alın."
+      "title": "Kişiselleştirilmiş öneriler",
+      "description": "Evcil hayvanınızın görünümü ve karakterine uygun isim fikirleri alın — oyuncu, zarif veya benzersiz."
     },
     "instantResults": {
-      "title": "Anında Sonuçlar",
-      "description": "Yeni arkadaşınız için saniyeler içinde birden fazla yaratıcı isim önerisi alın."
+      "title": "Hızlı sonuçlar",
+      "description": "Yeni arkadaşınız için saniyeler içinde birden fazla yaratıcı seçenek alın."
     }
   },
   "Metadata": {
-    "title": "Evcil Hayvan İsim Üreticisi - AI Destekli İsim Önerisi",
-    "description": "Evcil hayvanınızın fotoğrafını yükleyin ve AI destekli kişiselleştirilmiş isim önerileri alın. Köpekler, kediler ve tüm sevgili evcil hayvanlarınız için mükemmel isimler.",
-    "keywords": "evcil hayvan isimleri, köpek isimleri, kedi isimleri, AI evcil hayvan isimlendirme, evcil hayvan isim üreticisi, hayvan isimleri, evcil hayvan foto analizi",
+    "title": "Evcil Hayvan İsim Üreticisi — AI destekli isimlendirme",
+    "description": "Evcil hayvanınızın fotoğrafını yükleyin ve AI destekli kişiselleştirilmiş isim önerileri alın. Köpekler, kediler ve diğer dostlar için ideal.",
+    "keywords": "evcil hayvan isimleri, köpek isimleri, kedi isimleri, AI evcil hayvan isimlendirme, isim üretici, fotoğraf analizi",
     "openGraph": {
-      "title": "Evcil Hayvan İsim Üreticisi - AI Destekli İsim Önerisi",
-      "description": "Evcil hayvanınızın fotoğrafını yükleyin ve AI destekli kişiselleştirilmiş isim önerileri alın.",
+      "title": "Evcil Hayvan İsim Üreticisi — AI destekli isimlendirme",
+      "description": "Bir fotoğraf yükleyin ve evcil hayvanınıza uygun isim önerileri alın.",
       "siteName": "Evcil Hayvan İsim Üreticisi"
     },
     "twitter": {
-      "title": "Evcil Hayvan İsim Üreticisi - AI Destekli İsim Önerisi",
-      "description": "Evcil hayvanınızın fotoğrafını yükleyin ve AI destekli kişiselleştirilmiş isim önerileri alın."
+      "title": "Evcil Hayvan İsim Üreticisi — AI",
+      "description": "Evcil hayvanınızın fotoğrafını yükleyin ve AI destekli isim önerileri alın."
     }
   },
   "ImageUpload": {
-    "label": "Evcil Hayvanınızın Fotoğrafını Yükleyin",
-    "changeButton": "Fotoğrafı Değiştir",
-    "dropText": "Fotoğrafınızı buraya bırakın!",
+    "label": "Evcil hayvanınızın fotoğrafını yükleyin",
+    "changeButton": "Fotoğrafı değiştir",
+    "dropText": "Fotoğrafınızı buraya bırakın",
     "clickText": "Yüklemek için tıklayın veya sürükleyip bırakın",
-    "fileInfo": "{extensions} - maksimum {maxSize}MB",
+    "fileInfo": "{extensions} — maksimum {maxSize}MB",
     "errors": {
       "invalidFileType": "Geçersiz dosya türü. Lütfen bir resim yükleyin.",
-      "fileTooLarge": "Dosya çok büyük. Maksimum boyut {maxSize}MB."
+      "fileTooLarge": "Dosya çok büyük. Maksimum: {maxSize}MB."
     }
   },
   "SubmitButton": {
-    "loading": "İsimler Oluşturuluyor...",
-    "default": "Evcil Hayvan İsimlerini Oluştur"
+    "loading": "İsimler aranıyor...",
+    "default": "İsimleri bul"
   },
   "LocaleSwitcher": {
     "en": "English",
@@ -63,19 +63,19 @@
     "fr": "Français",
     "de": "Deutsch",
     "zh": "中文",
-    "selectLanguage": "Dil"
+    "selectLanguage": "Dil seçin"
   },
   "PetNameForm": {
-    "successMessage": "Evcil hayvan isimleri başarıyla oluşturuldu!",
+    "successMessage": "Harika — isimler oluşturuldu!",
     "errors": {
-      "noImage": "İsim üretmek için lütfen evcil hayvanınızın fotoğrafını seçin.",
-      "generateFailed": "Evcil hayvan isimleri üretilemedi. Lütfen tekrar deneyin.",
-      "unexpectedError": "Beklenmeyen bir hata oluştu. Lütfen tekrar deneyin.",
-      "networkError": "Ağ hatası. Lütfen bağlantınızı kontrol edin ve tekrar deneyin.",
-      "rateLimited": "Çok fazla istek. Lütfen biraz bekleyin ve tekrar deneyin.",
-      "recaptchaFailed": "reCAPTCHA doğrulaması başarısız. Lütfen tekrar deneyin.",
+      "noImage": "İsim oluşturmak için lütfen evcil hayvanınızın fotoğrafını seçin.",
+      "generateFailed": "Şu anda isimler oluşturulamadı. Lütfen tekrar deneyin.",
+      "unexpectedError": "Bir şeyler ters gitti. Lütfen tekrar deneyin.",
+      "networkError": "Ağ hatası. Bağlantınızı kontrol edin ve tekrar deneyin.",
+      "rateLimited": "Çok fazla istek. Lütfen bir süre bekleyip tekrar deneyin.",
+      "recaptchaFailed": "reCAPTCHA doğrulaması başarısız oldu. Lütfen tekrar deneyin.",
       "invalidFileType": "Geçersiz dosya türü. Lütfen bir resim yükleyin.",
-      "fileTooLarge": "Dosya çok büyük. Maksimum boyut {maxSize}MB."
+      "fileTooLarge": "Dosya çok büyük. Maksimum: {maxSize}MB."
     }
   }
 }

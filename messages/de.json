@@ -1,60 +1,60 @@
 {
   "Header": {
-    "title": "Haustier Namensgenerator",
-    "description": "Laden Sie ein Foto Ihres niedlichen Haustiers hoch und lassen Sie unsere KI die perfekten Namen vorschlagen. Unser System analysiert das Aussehen Ihres Haustiers, um personalisierte Vorschläge zu erstellen."
+    "title": "Haustier-Namensgenerator",
+    "description": "Laden Sie ein Foto Ihres Haustiers hoch – wir schlagen Namen vor, die zu Aussehen und Charakter passen. Schnell, freundlich und persönlich."
   },
   "EmptyState": {
-    "title": "Laden Sie ein Foto hoch, um zu beginnen!",
-    "description": "Der perfekte Name Ihres Haustiers ist nur einen Upload entfernt."
+    "title": "Foto hochladen, um zu beginnen",
+    "description": "Der perfekte Name könnte nur einen Upload entfernt sein."
   },
   "ResultsDisplay": {
-    "title": "Perfekte Namen für Ihr Haustier!",
+    "title": "Tolle Namensideen für Ihr Haustier",
     "aiAnalysisTitle": "KI-Analyse:",
     "suggestedNamesTitle": "Vorgeschlagene Namen:",
     "tryAnotherButton": "Anderes Foto versuchen"
   },
   "FeaturesSection": {
     "aiAnalysis": {
-      "title": "KI-gestützte Analyse",
-      "description": "Unsere fortschrittliche KI analysiert das Foto Ihres Haustiers, um seine einzigartigen Merkmale zu verstehen."
+      "title": "KI-gestützte Bildanalyse",
+      "description": "Unsere KI betrachtet das Foto, um Merkmale und Persönlichkeitszüge zu erkennen, die zu passenden Namensideen führen."
     },
     "personalizedNames": {
-      "title": "Personalisierte Namen",
-      "description": "Erhalten Sie personalisierte Namensvorschläge, die zum Aussehen und zur Persönlichkeit Ihres Haustiers passen."
+      "title": "Personalisierte Vorschläge",
+      "description": "Erhalten Sie Namensideen, die zum Aussehen und Charakter Ihres Tieres passen – verspielt, elegant oder einzigartig."
     },
     "instantResults": {
-      "title": "Sofortige Ergebnisse",
-      "description": "Erhalten Sie in Sekunden mehrere kreative Namensvorschläge."
+      "title": "Schnelle Ergebnisse",
+      "description": "Erhalten Sie in Sekundenschnelle mehrere kreative Vorschläge für Ihren neuen Begleiter."
     }
   },
   "Metadata": {
-    "title": "Haustier Namensgenerator - KI-gestützte Namensgebung",
-    "description": "Laden Sie ein Foto Ihres Haustiers hoch und erhalten Sie personalisierte Namensvorschläge, die von KI unterstützt werden.",
+    "title": "Haustier-Namensgenerator — KI-gestützte Namensfindung",
+    "description": "Laden Sie ein Foto Ihres Haustiers hoch und erhalten Sie personalisierte Namensvorschläge mit KI-Unterstützung. Für Hunde, Katzen und andere geliebte Haustiere.",
     "keywords": "haustiernamen, hundenamen, katzennamen, ki namensgebung, namensgenerator, tierfotoanalyse",
     "openGraph": {
-      "title": "Haustier Namensgenerator - KI-gestützte Namensgebung",
-      "description": "Laden Sie ein Foto Ihres Haustiers hoch und erhalten Sie personalisierte Namensvorschläge, die von KI unterstützt werden.",
-      "siteName": "Haustier Namensgenerator"
+      "title": "Haustier-Namensgenerator — KI-gestützte Namensfindung",
+      "description": "Laden Sie ein Foto hoch und erhalten Sie passende Namensvorschläge für Ihr Haustier.",
+      "siteName": "Haustier-Namensgenerator"
     },
     "twitter": {
-      "title": "Haustier Namensgenerator - KI-gestützte Namensgebung",
-      "description": "Laden Sie ein Foto Ihres Haustiers hoch und erhalten Sie personalisierte Namensvorschläge, die von KI unterstützt werden."
+      "title": "Haustier-Namensgenerator — KI-gestützte Namensfindung",
+      "description": "Laden Sie ein Foto Ihres Haustiers hoch und erhalten Sie KI-gestützte Namensvorschläge."
     }
   },
   "ImageUpload": {
-    "label": "Laden Sie das Foto Ihres Haustiers hoch",
+    "label": "Foto Ihres Haustiers hochladen",
     "changeButton": "Bild ändern",
-    "dropText": "Ziehen Sie Ihr Bild hierher!",
-    "clickText": "Klicken, um hochzuladen oder per Drag & Drop",
-    "fileInfo": "{extensions} bis zu {maxSize}MB",
+    "dropText": "Ziehen Sie Ihr Bild hierher",
+    "clickText": "Klicken oder per Drag & Drop hochladen",
+    "fileInfo": "{extensions} — bis zu {maxSize}MB",
     "errors": {
       "invalidFileType": "Ungültiger Dateityp. Bitte laden Sie ein Bild hoch.",
-      "fileTooLarge": "Die Datei ist zu groß. Maximale Größe ist {maxSize}MB."
+      "fileTooLarge": "Die Datei ist zu groß. Maximale Größe: {maxSize}MB."
     }
   },
   "SubmitButton": {
-    "loading": "Namen werden generiert...",
-    "default": "Haustiernamen generieren"
+    "loading": "Namen werden gesucht...",
+    "default": "Namen finden"
   },
   "LocaleSwitcher": {
     "en": "English",
@@ -63,19 +63,19 @@
     "fr": "Français",
     "de": "Deutsch",
     "zh": "中文",
-    "selectLanguage": "Sprache"
+    "selectLanguage": "Sprache wählen"
   },
   "PetNameForm": {
-    "successMessage": "Haustiernamen erfolgreich generiert!",
+    "successMessage": "Super — Namen erstellt!",
     "errors": {
-      "noImage": "Bitte wählen Sie ein Bild Ihres Haustiers aus, um Namen zu generieren.",
-      "generateFailed": "Generierung der Namen fehlgeschlagen. Bitte versuchen Sie es erneut.",
-      "unexpectedError": "Ein unerwarteter Fehler ist aufgetreten. Bitte versuchen Sie es erneut.",
-      "networkError": "Netzwerkfehler. Bitte überprüfen Sie Ihre Verbindung und versuchen Sie es erneut.",
+      "noImage": "Bitte wählen Sie ein Bild Ihres Haustiers, um Namen zu generieren.",
+      "generateFailed": "Die Namensgenerierung hat nicht funktioniert. Bitte versuchen Sie es erneut.",
+      "unexpectedError": "Ein unerwarteter Fehler ist aufgetreten. Bitte versuchen Sie es später noch einmal.",
+      "networkError": "Netzwerkfehler. Bitte prüfen Sie Ihre Verbindung und versuchen Sie es erneut.",
       "rateLimited": "Zu viele Anfragen. Bitte warten Sie einen Moment und versuchen Sie es erneut.",
       "recaptchaFailed": "reCAPTCHA-Überprüfung fehlgeschlagen. Bitte versuchen Sie es erneut.",
       "invalidFileType": "Ungültiger Dateityp. Bitte laden Sie ein Bild hoch.",
-      "fileTooLarge": "Die Datei ist zu groß. Maximal {maxSize}MB."
+      "fileTooLarge": "Die Datei ist zu groß. Maximale Größe: {maxSize}MB."
     }
   }
 }

@@ -1,60 +1,60 @@
 {
   "Header": {
-    "title": "Générateur de Noms d'Animaux",
-    "description": "Téléchargez une photo de votre adorable animal et laissez notre IA suggérer les noms parfaits. Notre système analyse l'apparence de votre animal pour créer des suggestions personnalisées."
+    "title": "Générateur de noms pour animaux",
+    "description": "Téléchargez une photo de votre animal et nous proposerons des noms adaptés à son apparence et sa personnalité. Rapide, accessible et fait pour votre compagnon."
   },
   "EmptyState": {
-    "title": "Téléchargez une photo pour commencer !",
-    "description": "Le nom parfait de votre animal est à un seul téléchargement."
+    "title": "Téléchargez une photo pour commencer !",
+    "description": "Le nom parfait peut être à un seul téléchargement."
   },
   "ResultsDisplay": {
-    "title": "Noms parfaits pour votre animal !",
-    "aiAnalysisTitle": "Analyse IA:",
-    "suggestedNamesTitle": "Noms suggérés:",
+    "title": "De belles idées de noms pour votre animal",
+    "aiAnalysisTitle": "Analyse IA :",
+    "suggestedNamesTitle": "Noms suggérés :",
     "tryAnotherButton": "Essayer une autre photo"
   },
   "FeaturesSection": {
     "aiAnalysis": {
-      "title": "Analyse pilotée par l'IA",
-      "description": "Notre IA avancée analyse la photo de votre animal pour comprendre ses caractéristiques uniques."
+      "title": "Analyse d'image intelligente",
+      "description": "Notre IA étudie la photo pour repérer les traits et indices de personnalité qui inspirent des idées de noms adaptées."
     },
     "personalizedNames": {
-      "title": "Noms personnalisés",
-      "description": "Obtenez des suggestions de noms sur mesure qui correspondent à l'apparence et à la personnalité de votre animal."
+      "title": "Suggestions personnalisées",
+      "description": "Recevez des idées de noms qui correspondent à l'apparence et au caractère de votre animal — espiègle, élégant ou original."
     },
     "instantResults": {
-      "title": "Résultats instantanés",
-      "description": "Recevez plusieurs suggestions créatives en quelques secondes, prêtes pour votre nouveau compagnon."
+      "title": "Résultats rapides",
+      "description": "Recevez en quelques secondes plusieurs options créatives, prêtes pour votre nouveau compagnon."
     }
   },
   "Metadata": {
-    "title": "Générateur de Noms d'Animaux - Nommage assisté par IA",
-    "description": "Téléchargez une photo de votre animal et obtenez des suggestions de noms personnalisées par l'IA.",
-    "keywords": "noms animaux, noms chiens, noms chats, IA noms animaux, générateur de noms",
+    "title": "Générateur de noms pour animaux — Noms assistés par IA",
+    "description": "Téléchargez une photo de votre animal et obtenez des suggestions de noms personnalisées par IA. Idéal pour chiens, chats et autres compagnons.",
+    "keywords": "noms animaux, noms chiens, noms chats, IA noms animaux, générateur de noms, analyse photo animal",
     "openGraph": {
-      "title": "Générateur de Noms d'Animaux - Nommage assisté par IA",
-      "description": "Téléchargez une photo de votre animal et obtenez des suggestions de noms personnalisées par l'IA.",
-      "siteName": "Générateur de Noms d'Animaux"
+      "title": "Générateur de noms pour animaux — Noms assistés par IA",
+      "description": "Téléchargez une photo et recevez des suggestions de noms adaptées à votre animal.",
+      "siteName": "Générateur de noms pour animaux"
     },
     "twitter": {
-      "title": "Générateur de Noms d'Animaux - Nommage assisté par IA",
-      "description": "Téléchargez une photo de votre animal et obtenez des suggestions de noms personnalisées par l'IA."
+      "title": "Générateur de noms pour animaux — IA",
+      "description": "Téléchargez une photo de votre animal et recevez des suggestions de noms assistées par IA."
     }
   },
   "ImageUpload": {
     "label": "Téléchargez la photo de votre animal",
     "changeButton": "Changer l'image",
-    "dropText": "Déposez votre image ici !",
-    "clickText": "Cliquez pour télécharger ou glissez-déposez",
-    "fileInfo": "{extensions} jusqu'à {maxSize}MB",
+    "dropText": "Déposez votre image ici",
+    "clickText": "Cliquez pour télécharger ou glisser-déposer",
+    "fileInfo": "{extensions} — jusqu'à {maxSize}MB",
     "errors": {
       "invalidFileType": "Type de fichier invalide. Veuillez télécharger une image.",
-      "fileTooLarge": "Le fichier est trop volumineux. La taille maximale est de {maxSize}MB."
+      "fileTooLarge": "Le fichier est trop volumineux. Taille maximale : {maxSize}MB."
     }
   },
   "SubmitButton": {
-    "loading": "Génération des noms...",
-    "default": "Générer des noms pour animaux"
+    "loading": "Recherche de noms...",
+    "default": "Trouver des noms"
   },
   "LocaleSwitcher": {
     "en": "English",
@@ -63,19 +63,19 @@
     "fr": "Français",
     "de": "Deutsch",
     "zh": "中文",
-    "selectLanguage": "Langue"
+    "selectLanguage": "Choisir la langue"
   },
   "PetNameForm": {
-    "successMessage": "Noms d'animaux générés avec succès !",
+    "successMessage": "Super — noms générés !",
     "errors": {
       "noImage": "Veuillez sélectionner une image de votre animal pour générer des noms.",
-      "generateFailed": "Échec de la génération des noms. Veuillez réessayer.",
-      "unexpectedError": "Une erreur inattendue est survenue. Veuillez réessayer.",
+      "generateFailed": "Impossible de générer des noms pour le moment. Veuillez réessayer.",
+      "unexpectedError": "Une erreur est survenue. Veuillez réessayer.",
       "networkError": "Erreur réseau. Vérifiez votre connexion et réessayez.",
       "rateLimited": "Trop de requêtes. Veuillez patienter et réessayer.",
       "recaptchaFailed": "La vérification reCAPTCHA a échoué. Veuillez réessayer.",
       "invalidFileType": "Type de fichier invalide. Veuillez télécharger une image.",
-      "fileTooLarge": "Le fichier est trop volumineux. Max {maxSize}MB."
+      "fileTooLarge": "Le fichier est trop volumineux. Taille maximale : {maxSize}MB."
     }
   }
 }
