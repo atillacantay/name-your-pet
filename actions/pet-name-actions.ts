@@ -3,8 +3,8 @@
 import { API_CONFIG } from "@/app/config/api";
 import { FILE_CONFIG } from "@/app/config/file";
 import { PetNameResponse } from "@/app/types";
+import { validateFileSize, validateFileType } from "@/utils/file-utils";
 import { getTranslations } from "next-intl/server";
-import { verifyRecaptcha } from "./recaptcha-actions";
 
 export async function generatePetName(
   formData: FormData
@@ -13,9 +13,7 @@ export async function generatePetName(
   const image = formData.get("image") as File;
   const recaptchaToken = formData.get("recaptchaToken") as string;
 
-  // Verify reCAPTCHA
-  const isRecaptchaValid = await verifyRecaptcha(recaptchaToken);
-  if (!isRecaptchaValid) {
+  if (!recaptchaToken) {
     return {
       success: false,
       names: [],
@@ -35,8 +33,7 @@ export async function generatePetName(
     };
   }
 
-  // Check file size
-  if (image.size > FILE_CONFIG.MAX_SIZE_BYTES) {
+  if (!validateFileSize(image)) {
     return {
       success: false,
       names: [],
@@ -46,8 +43,7 @@ export async function generatePetName(
     };
   }
 
-  // Check file type
-  if (!FILE_CONFIG.ALLOWED_TYPES.includes(image.type)) {
+  if (!validateFileType(image)) {
     return {
       success: false,
       names: [],
@@ -58,13 +54,9 @@ export async function generatePetName(
   }
 
   try {
-    // Create FormData for backend request
-    const backendFormData = new FormData();
-    backendFormData.append("image", image, image.name);
-
     const response = await fetch(`${API_CONFIG.BASE_URL}/api/generate-name`, {
       method: "POST",
-      body: backendFormData,
+      body: formData,
     });
 
     if (!response.ok) {
