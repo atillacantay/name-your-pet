@@ -15,6 +15,7 @@ const nextConfig: NextConfig = {
       bodySizeLimit: "10mb",
     },
   },
+  htmlLimitedBots: /.*/,
 };
 
 const withNextIntl = createNextIntlPlugin();
