@@ -4,6 +4,7 @@ import type { Metadata, Viewport } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getTranslations } from "next-intl/server";
 import { Geist, Geist_Mono } from "next/font/google";
+import { baseUrl } from "./constants/common";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -95,9 +96,7 @@ export async function generateMetadata(): Promise<Metadata> {
       ],
     },
     category: "technology",
-    metadataBase: new URL(
-      process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"
-    ),
+    metadataBase: new URL(baseUrl),
   };
 }
 
