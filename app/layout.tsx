@@ -1,4 +1,4 @@
-import { GoogleAnalytics, GoogleTagManager } from "@next/third-parties/google";
+import { GoogleTagManager } from "@next/third-parties/google";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata, Viewport } from "next";
@@ -115,9 +115,6 @@ export default async function RootLayout({
       >
         <SpeedInsights />
         <Analytics />
-        <GoogleAnalytics
-          gaId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || ""}
-        />
         <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GTM_ID || ""} />
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
       </body>
