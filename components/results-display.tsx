@@ -37,14 +37,9 @@ export default function ResultsDisplay({
       </div>
 
       <div>
-        <div className="flex items-center justify-between mb-6">
-          <h3 className="text-xl font-semibold text-gray-900">
-            {t("suggestedNamesTitle")}
-          </h3>
-          <div className="text-sm text-gray-500 bg-gray-100 px-3 py-1 rounded-full">
-            {result.names.length} names
-          </div>
-        </div>
+        <h3 className="mb-6 text-xl font-semibold text-gray-900">
+          {t("suggestedNamesTitle")}
+        </h3>
 
         <ul className="grid gap-4" role="list">
           {result.names.map((name, index) => (
