@@ -5,6 +5,8 @@ import type { Metadata, Viewport } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getTranslations } from "next-intl/server";
 import { Geist, Geist_Mono } from "next/font/google";
+import Head from "next/head";
+import Script from "next/script";
 import { baseUrl } from "./constants/common";
 import "./globals.css";
 
@@ -110,6 +112,14 @@ export default async function RootLayout({
 
   return (
     <html lang={locale}>
+      <Head>
+        <Script
+          async
+          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-${process.env.NEXT_PUBLIC_GA_ADS_ID}`}
+          strategy="lazyOnload"
+          crossOrigin="anonymous"
+        />
+      </Head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
