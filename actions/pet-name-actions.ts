@@ -60,6 +60,14 @@ export async function generatePetName(
     );
 
     if (!response.ok) {
+      if (response.status === 429) {
+        return {
+          success: false,
+          names: [],
+          message: "",
+          error: t("errors.rateLimited"),
+        };
+      }
       throw new Error(`Backend request failed: ${response.status}`);
     }
 
