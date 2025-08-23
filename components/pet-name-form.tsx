@@ -1,9 +1,9 @@
 "use client";
 
 import { generatePetName } from "@/actions/pet-name-actions";
+import { config } from "@/config";
 import { useTranslations } from "next-intl";
 import React, { useState } from "react";
-import { RECAPTCHA_CONFIG } from "../app/config/recaptcha";
 import { GeneratedResult } from "../app/types";
 import ErrorDisplay from "./error-display";
 import ImageUpload from "./image-upload";
@@ -44,7 +44,9 @@ export default function PetNameForm({ onResult }: PetNameFormProps) {
     setError(null);
 
     try {
-      const token = await executeRecaptcha(RECAPTCHA_CONFIG.ACTION_GENERATE);
+      const token = await executeRecaptcha(
+        config.recaptchaActions.generatePetName
+      );
 
       const formData = new FormData();
       formData.append("image", selectedImage);

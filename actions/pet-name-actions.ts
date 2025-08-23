@@ -1,10 +1,11 @@
 "use server";
 
-import { API_CONFIG } from "@/app/config/api";
-import { FILE_CONFIG } from "@/app/config/file";
 import { PetNameResponse } from "@/app/types";
+import { config } from "@/config";
+import { generateNames } from "@/lib/generate-name";
 import { validateFileSize, validateFileType } from "@/utils/file-utils";
 import { getLocale, getTranslations } from "next-intl/server";
+import { verifyRecaptcha } from "./recaptcha-actions";
 
 export async function generatePetName(
   formData: FormData
@@ -15,6 +16,16 @@ export async function generatePetName(
   const locale = await getLocale();
 
   if (!recaptchaToken) {
+    return {
+      success: false,
+      names: [],
+      message: "",
+      error: t("errors.recaptchaFailed"),
+    };
+  }
+
+  const recaptchaVerified = await verifyRecaptcha(recaptchaToken);
+  if (!recaptchaVerified) {
     return {
       success: false,
       names: [],
@@ -37,7 +48,7 @@ export async function generatePetName(
       success: false,
       names: [],
       message: "",
-      error: t("errors.fileTooLarge", { maxSize: FILE_CONFIG.MAX_SIZE_MB }),
+      error: t("errors.fileTooLarge", { maxSize: config.maxFileSizeInMB }),
     };
   }
 
@@ -51,28 +62,25 @@ export async function generatePetName(
   }
 
   try {
-    const response = await fetch(
-      `${API_CONFIG.BASE_URL}/api/generate-name?locale=${locale}`,
-      {
-        method: "POST",
-        body: formData,
-      }
-    );
+    const backendFormData = new FormData();
+    backendFormData.append("image", image);
+    const names = await generateNames(image, locale);
 
-    if (!response.ok) {
-      if (response.status === 429) {
-        return {
-          success: false,
-          names: [],
-          message: "",
-          error: t("errors.rateLimited"),
-        };
-      }
-      throw new Error(`Backend request failed: ${response.status}`);
+    if (names.length === 0) {
+      return {
+        success: false,
+        names: [],
+        message: "",
+        error: t("errors.generateFailed"),
+      };
     }
 
-    const result: PetNameResponse = await response.json();
-    return { ...result, message: t("successMessage") };
+    return {
+      success: true,
+      names,
+      message: t("successMessage"),
+      error: "",
+    };
   } catch (error) {
     console.error("Error generating pet name:", error);
     return {

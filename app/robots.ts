@@ -1,5 +1,5 @@
+import { config } from "@/config";
 import type { MetadataRoute } from "next";
-import { baseUrl } from "./constants/common";
 
 export default function robots(): MetadataRoute.Robots {
   return {
@@ -10,7 +10,7 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/private/", "/admin/", "/api/", "/_next/", "/.*\\.json$"],
       },
     ],
-    sitemap: `${baseUrl}/sitemap.xml`,
-    host: baseUrl,
+    sitemap: `${config.baseUrl}/sitemap.xml`,
+    host: config.baseUrl,
   };
 }

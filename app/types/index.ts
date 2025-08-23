@@ -1,3 +1,15 @@
+declare global {
+  interface Window {
+    grecaptcha?: {
+      ready: (callback: () => void) => void;
+      execute: (
+        siteKey: string,
+        options: { action: string }
+      ) => Promise<string>;
+    };
+  }
+}
+
 export interface GeneratedResult {
   names: string[];
   message: string;
@@ -23,4 +35,17 @@ export interface Feature {
   description: string;
   bgColor: string;
   iconColor: string;
+}
+
+export interface ImageToTextResponse {
+  errors?: {
+    code: string;
+    message: string;
+  }[];
+  result?: {
+    description?: string;
+    text?: string;
+  };
+  success: boolean;
+  message?: string[];
 }

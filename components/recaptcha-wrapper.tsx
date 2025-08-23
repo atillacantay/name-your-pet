@@ -1,22 +1,10 @@
 "use client";
 
-import { RECAPTCHA_CONFIG } from "@/app/config/recaptcha";
+import { config } from "@/config";
 import Script from "next/script";
 
-declare global {
-  interface Window {
-    grecaptcha?: {
-      ready: (callback: () => void) => void;
-      execute: (
-        siteKey: string,
-        options: { action: string }
-      ) => Promise<string>;
-    };
-  }
-}
-
 export default function RecaptchaWrapper() {
-  const siteKey = RECAPTCHA_CONFIG.SITE_KEY;
+  const siteKey = config.recaptchaSiteKey;
 
   if (!siteKey) {
     return null;
@@ -31,9 +19,9 @@ export default function RecaptchaWrapper() {
 }
 
 export const executeRecaptcha = async (
-  action = RECAPTCHA_CONFIG.ACTION_GENERATE
+  action = "submit"
 ): Promise<string | null> => {
-  const siteKey = RECAPTCHA_CONFIG.SITE_KEY;
+  const siteKey = config.recaptchaSiteKey;
 
   if (!siteKey || !window.grecaptcha) {
     return null;

@@ -1,7 +1,7 @@
 "use client";
 
 import { setCookiesLocale } from "@/actions/get-locale";
-import { locales } from "@/i18n/config";
+import { config } from "@/config";
 import { ChevronDown, Globe } from "lucide-react";
 import { type Locale, useLocale, useTranslations } from "next-intl";
 import { useTransition } from "react";
@@ -35,7 +35,7 @@ export function LocaleSwitcher() {
           disabled={isPending}
           className="appearance-none bg-white border border-gray-300 rounded-lg pl-10 pr-8 py-2 text-sm font-medium text-gray-700 hover:border-purple-400 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
         >
-          {locales.map((loc) => (
+          {config.supportedLocales.map((loc) => (
             <option key={loc} value={loc}>
               {t(loc)}
             </option>

@@ -1,9 +1,9 @@
-import { FILE_CONFIG } from "@/app/config/file";
+import { config } from "@/config";
 
 export const validateFileType = (file: File): boolean => {
-  return FILE_CONFIG.ALLOWED_TYPES.includes(file.type);
+  return config.allowedMimeTypes.includes(file.type);
 };
 
 export const validateFileSize = (file: File): boolean => {
-  return file.size <= FILE_CONFIG.MAX_SIZE_BYTES;
+  return file.size <= config.maxFileSize;
 };

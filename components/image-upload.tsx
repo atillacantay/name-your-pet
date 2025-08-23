@@ -1,6 +1,6 @@
 "use client";
 
-import { FILE_CONFIG } from "@/app/config/file";
+import { config } from "@/config";
 import { validateFileSize, validateFileType } from "@/utils/file-utils";
 import { Camera, Upload } from "lucide-react";
 import { useTranslations } from "next-intl";
@@ -61,7 +61,7 @@ export default function ImageUpload({
     }
 
     if (!validateFileSize(file)) {
-      alert(t("errors.fileTooLarge", { maxSize: FILE_CONFIG.MAX_SIZE_MB }));
+      alert(t("errors.fileTooLarge", { maxSize: config.maxFileSizeInMB }));
       return false;
     }
 
@@ -126,8 +126,8 @@ export default function ImageUpload({
               </p>
               <p className="text-sm text-gray-500">
                 {t("fileInfo", {
-                  extensions: FILE_CONFIG.ALLOWED_EXTENSIONS.join(", "),
-                  maxSize: FILE_CONFIG.MAX_SIZE_MB,
+                  extensions: config.allowedFileExtensions.join(", "),
+                  maxSize: config.maxFileSizeInMB,
                 })}
               </p>
             </div>

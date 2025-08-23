@@ -1,3 +1,4 @@
+import { config } from "@/config";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
@@ -6,7 +7,6 @@ import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getTranslations } from "next-intl/server";
 import { Geist, Geist_Mono } from "next/font/google";
 import Script from "next/script";
-import { baseUrl } from "./constants/common";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -98,7 +98,7 @@ export async function generateMetadata(): Promise<Metadata> {
       ],
     },
     category: "technology",
-    metadataBase: new URL(baseUrl),
+    metadataBase: new URL(config.baseUrl),
   };
 }
 
