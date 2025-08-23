@@ -5,7 +5,13 @@
   },
   "EmptyState": {
     "title": "Başlamak için fotoğraf yükleyin!",
-    "description": "Kusursuz isim sadece bir yükleme uzakta olabilir."
+    "description": "Kusursuz isim sadece bir yükleme uzakta olabilir.",
+    "steps": {
+      "upload": "Evcil hayvanınızın fotoğrafını yükleyin",
+      "analyze": "AI benzersiz özellikleri analiz eder",
+      "results": "Mükemmel isim önerileri alın"
+    },
+    "encouragement": "✨ Mükemmel ismi bulan binlerce mutlu evcil hayvan sahibine katılın"
   },
   "ResultsDisplay": {
     "title": "Evcil hayvanınız için harika isim fikirleri",
@@ -25,6 +31,41 @@
     "instantResults": {
       "title": "Hızlı sonuçlar",
       "description": "Yeni arkadaşınız için saniyeler içinde birden fazla yaratıcı seçenek alın."
+    },
+    "howItWorks": {
+      "title": "Nasıl Çalışır",
+      "subtitle": "AI destekli sistemimiz, evcil hayvanınızın benzersiz özelliklerini analiz ederek kişiliği ve görünümüne uygun mükemmel isimler önerir."
+    },
+    "whyChoose": {
+      "title": "Neden bizim isim üreticiyi seçmelisiniz?",
+      "subtitle": "En son AI teknolojisiyle geliştirildi ve tüylü dostları için mükemmel isim arayan evcil hayvan severler için tasarlandı."
+    },
+    "additionalFeatures": {
+      "privacy": {
+        "title": "Gizlilik korumalı",
+        "description": "Fotoğraflarınız güvenli bir şekilde işlenir ve asla kalıcı olarak saklanmaz"
+      },
+      "multiLanguage": {
+        "title": "Çok dilli",
+        "description": "Kültürel olarak uygun isimlerle 6 dilde kullanılabilir"
+      },
+      "smartUpload": {
+        "title": "Akıllı yükleme",
+        "description": "Sürükle bırak veya tıklayarak yükle — tüm resim formatlarını destekler"
+      },
+      "lightningFast": {
+        "title": "Şimşek hızında",
+        "description": "Optimize edilmiş AI işlememizle saniyeler içinde sonuç alın"
+      }
+    },
+    "callToAction": {
+      "title": "Mükemmel ismi bulmaya hazır mısınız?",
+      "description": "Evcil hayvanınızın fotoğrafını yükleyin ve saniyeler içinde benzersiz kişiliğini yakalayan güzel isimleri keşfedin.",
+      "badges": {
+        "free": "✨ Ücretsiz kullanım",
+        "secure": "🔒 Güvenli ve özel",
+        "instant": "⚡ Anında sonuçlar"
+      }
     }
   },
   "Metadata": {
@@ -66,6 +107,8 @@
     "selectLanguage": "Dil seçin"
   },
   "PetNameForm": {
+    "title": "Evcil Hayvanınızın Fotoğrafını Yükleyin",
+    "description": "AI, evcil hayvanınızın özelliklerini analiz edecek ve mükemmel isimler önerecek.",
     "successMessage": "Harika — isimler oluşturuldu!",
     "errors": {
       "noImage": "İsim oluşturmak için lütfen evcil hayvanınızın fotoğrafını seçin.",

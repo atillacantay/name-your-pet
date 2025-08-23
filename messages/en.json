@@ -5,7 +5,13 @@
   },
   "EmptyState": {
     "title": "Upload a photo to get started!",
-    "description": "The perfect name could be just one upload away."
+    "description": "The perfect name could be just one upload away.",
+    "steps": {
+      "upload": "Upload your pet's photo",
+      "analyze": "AI analyzes unique features",
+      "results": "Get perfect name suggestions"
+    },
+    "encouragement": "✨ Join thousands of happy pet parents who found the perfect name"
   },
   "ResultsDisplay": {
     "title": "Great name ideas for your pet",
@@ -25,6 +31,41 @@
     "instantResults": {
       "title": "Quick results",
       "description": "Receive multiple creative name options in seconds, ready for your new friend."
+    },
+    "howItWorks": {
+      "title": "How It Works",
+      "subtitle": "Our AI-powered system analyzes your pet's unique features to suggest perfect names that match their personality and appearance."
+    },
+    "whyChoose": {
+      "title": "Why Choose Our Pet Namer?",
+      "subtitle": "Built with the latest AI technology and designed for pet lovers who want the perfect name for their furry friends."
+    },
+    "additionalFeatures": {
+      "privacy": {
+        "title": "Privacy Protected",
+        "description": "Your photos are processed securely and never stored permanently"
+      },
+      "multiLanguage": {
+        "title": "Multi-Language",
+        "description": "Available in 6 languages with culturally appropriate names"
+      },
+      "smartUpload": {
+        "title": "Smart Upload",
+        "description": "Drag & drop or click to upload — supports all image formats"
+      },
+      "lightningFast": {
+        "title": "Lightning Fast",
+        "description": "Get results in seconds with our optimized AI processing"
+      }
+    },
+    "callToAction": {
+      "title": "Ready to find the perfect name?",
+      "description": "Upload your pet's photo and discover beautiful names that capture their unique personality in seconds.",
+      "badges": {
+        "free": "✨ Free to use",
+        "secure": "🔒 Secure & private",
+        "instant": "⚡ Instant results"
+      }
     }
   },
   "Metadata": {
@@ -66,6 +107,8 @@
     "selectLanguage": "Select language"
   },
   "PetNameForm": {
+    "title": "Upload Your Pet's Photo",
+    "description": "Our AI will analyze your pet's features and suggest perfect names",
     "successMessage": "Great — pet names generated!",
     "errors": {
       "noImage": "Please select an image of your pet to generate names.",

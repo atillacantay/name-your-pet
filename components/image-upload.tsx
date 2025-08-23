@@ -77,7 +77,7 @@ export default function ImageUpload({
   return (
     <div>
       <label className="block text-lg font-semibold text-gray-700 mb-4">
-        <Camera className="inline-block w-5 h-5 mr-2" />
+        <Camera className="inline-block size-5 mr-2" />
         {t("label")}
       </label>
 
@@ -112,7 +112,7 @@ export default function ImageUpload({
         ) : (
           <div onClick={handleClick} className="cursor-pointer space-y-4">
             <Upload
-              className={`w-16 h-16 mx-auto transition-colors duration-200 ${
+              className={`size-16 mx-auto transition-colors duration-200 ${
                 isDragOver ? "text-purple-500" : "text-gray-400"
               }`}
             />

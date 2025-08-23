@@ -8,7 +8,7 @@ export default async function Header() {
     <div className="text-center mb-12">
       <div className="flex items-center justify-center gap-3 mb-6">
         <div className="p-3 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full">
-          <Heart className="w-8 h-8 text-white" />
+          <Heart className="size-8 text-white" />
         </div>
         <h1 className="text-5xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
           {t("title")}

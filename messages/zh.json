@@ -5,7 +5,13 @@
   },
   "EmptyState": {
     "title": "上传照片开始吧！",
-    "description": "完美的名字可能只需一次上传。"
+    "description": "完美的名字可能只需一次上传。",
+    "steps": {
+      "upload": "上传宠物照片",
+      "analyze": "AI分析独特特征",
+      "results": "获得完美的名字建议"
+    },
+    "encouragement": "✨ 加入成千上万找到完美名字的快乐宠物主人"
   },
   "ResultsDisplay": {
     "title": "为你的宠物准备的好名字",
@@ -25,6 +31,41 @@
     "instantResults": {
       "title": "快速结果",
       "description": "数秒内收到多个富有创意的名字选项，准备迎接你的新伙伴。"
+    },
+    "howItWorks": {
+      "title": "工作原理",
+      "subtitle": "我们的 AI 系统会分析宠物的独特特征，推荐与它们的性格和外观相匹配的完美名字。"
+    },
+    "whyChoose": {
+      "title": "为什么选择我们的宠物取名器？",
+      "subtitle": "采用最新的 AI 技术构建，专为想要为毛茸茸朋友找到完美名字的宠物爱好者设计。"
+    },
+    "additionalFeatures": {
+      "privacy": {
+        "title": "隐私保护",
+        "description": "您的照片会被安全处理，绝不会永久存储"
+      },
+      "multiLanguage": {
+        "title": "多语言支持",
+        "description": "支持 6 种语言，提供文化上合适的名字"
+      },
+      "smartUpload": {
+        "title": "智能上传",
+        "description": "拖放或点击上传 — 支持所有图片格式"
+      },
+      "lightningFast": {
+        "title": "闪电般快速",
+        "description": "通过我们优化的 AI 处理在几秒钟内获得结果"
+      }
+    },
+    "callToAction": {
+      "title": "准备找到完美的名字了吗？",
+      "description": "上传您宠物的照片，几秒钟内发现能捕捉其独特个性的美丽名字。",
+      "badges": {
+        "free": "✨ 免费使用",
+        "secure": "🔒 安全私密",
+        "instant": "⚡ 即时结果"
+      }
     }
   },
   "Metadata": {
@@ -66,6 +107,8 @@
     "selectLanguage": "选择语言"
   },
   "PetNameForm": {
+    "title": "上传您的宠物照片",
+    "description": "我们的 AI 将分析您宠物的特征并建议合适的名字",
     "successMessage": "太棒了 — 名字已生成！",
     "errors": {
       "noImage": "请选择宠物的照片以生成名字。",

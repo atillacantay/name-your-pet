@@ -5,7 +5,13 @@
   },
   "EmptyState": {
     "title": "Foto hochladen, um zu beginnen",
-    "description": "Der perfekte Name könnte nur einen Upload entfernt sein."
+    "description": "Der perfekte Name könnte nur einen Upload entfernt sein.",
+    "steps": {
+      "upload": "Foto Ihres Haustieres hochladen",
+      "analyze": "KI analysiert einzigartige Merkmale",
+      "results": "Perfekte Namensvorschläge erhalten"
+    },
+    "encouragement": "✨ Schließen Sie sich Tausenden von glücklichen Tierbesitzern an, die den perfekten Namen gefunden haben"
   },
   "ResultsDisplay": {
     "title": "Tolle Namensideen für Ihr Haustier",
@@ -25,6 +31,41 @@
     "instantResults": {
       "title": "Schnelle Ergebnisse",
       "description": "Erhalten Sie in Sekundenschnelle mehrere kreative Vorschläge für Ihren neuen Begleiter."
+    },
+    "howItWorks": {
+      "title": "Wie es funktioniert",
+      "subtitle": "Unser KI-System analysiert die einzigartigen Merkmale Ihres Haustiers, um perfekte Namen vorzuschlagen, die zu Persönlichkeit und Aussehen passen."
+    },
+    "whyChoose": {
+      "title": "Warum unseren Haustier-Namensgenerator wählen?",
+      "subtitle": "Entwickelt mit neuester KI-Technologie für Tierliebhaber, die den perfekten Namen für ihre pelzigen Freunde suchen."
+    },
+    "additionalFeatures": {
+      "privacy": {
+        "title": "Datenschutz gewährleistet",
+        "description": "Ihre Fotos werden sicher verarbeitet und niemals dauerhaft gespeichert"
+      },
+      "multiLanguage": {
+        "title": "Mehrsprachig",
+        "description": "Verfügbar in 6 Sprachen mit kulturell angemessenen Namen"
+      },
+      "smartUpload": {
+        "title": "Intelligenter Upload",
+        "description": "Drag & Drop oder Klicken zum Hochladen — unterstützt alle Bildformate"
+      },
+      "lightningFast": {
+        "title": "Blitzschnell",
+        "description": "Erhalten Sie Ergebnisse in Sekunden mit unserer optimierten KI-Verarbeitung"
+      }
+    },
+    "callToAction": {
+      "title": "Bereit, den perfekten Namen zu finden?",
+      "description": "Laden Sie das Foto Ihres Haustiers hoch und entdecken Sie schöne Namen, die ihre einzigartige Persönlichkeit in Sekunden einfangen.",
+      "badges": {
+        "free": "✨ Kostenlos nutzen",
+        "secure": "🔒 Sicher & privat",
+        "instant": "⚡ Sofortige Ergebnisse"
+      }
     }
   },
   "Metadata": {
@@ -66,6 +107,8 @@
     "selectLanguage": "Sprache wählen"
   },
   "PetNameForm": {
+    "title": "Foto Ihres Haustiers hochladen",
+    "description": "Unsere KI analysiert die Merkmale Ihres Haustiers und schlägt passende Namen vor",
     "successMessage": "Super — Namen erstellt!",
     "errors": {
       "noImage": "Bitte wählen Sie ein Bild Ihres Haustiers, um Namen zu generieren.",

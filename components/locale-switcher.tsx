@@ -26,7 +26,7 @@ export function LocaleSwitcher() {
         {t("selectLanguage")}
       </label>
       <div className="relative">
-        <Globe className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-500 pointer-events-none" />
+        <Globe className="absolute left-3 top-1/2 transform -translate-y-1/2 size-4 text-gray-500 pointer-events-none" />
         <select
           id="locale-switcher"
           name="locale-switcher"
@@ -41,11 +41,11 @@ export function LocaleSwitcher() {
             </option>
           ))}
         </select>
-        <ChevronDown className="absolute right-2 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-500 pointer-events-none" />
+        <ChevronDown className="absolute right-2 top-1/2 transform -translate-y-1/2 size-4 text-gray-500 pointer-events-none" />
       </div>
       {isPending && (
         <div className="absolute inset-0 bg-white bg-opacity-50 rounded-lg flex items-center justify-center">
-          <div className="w-4 h-4 border-2 border-purple-500 border-t-transparent rounded-full animate-spin"></div>
+          <div className="size-4 border-2 border-purple-500 border-t-transparent rounded-full animate-spin"></div>
         </div>
       )}
     </div>

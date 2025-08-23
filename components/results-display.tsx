@@ -16,37 +16,67 @@ export default function ResultsDisplay({
   const t = useTranslations("ResultsDisplay");
 
   return (
-    <div className="space-y-6">
-      <div className="text-center">
-        <Sparkles className="w-8 h-8 text-yellow-500 mx-auto mb-3" />
-        <h2 className="text-2xl font-bold text-gray-800 mb-2">{t("title")}</h2>
-        <p className="text-gray-600">{result.message}</p>
+    <section
+      className="space-y-8"
+      role="region"
+      aria-labelledby="results-title"
+    >
+      <div className="text-center relative">
+        <div className="inline-flex items-center justify-center size-16 bg-gradient-to-br from-yellow-400 to-orange-400 rounded-full mb-4">
+          <Sparkles className="size-8 text-white" aria-hidden="true" />
+        </div>
+        <h2
+          id="results-title"
+          className="text-3xl font-bold text-gray-900 mb-3"
+        >
+          {t("title")}
+        </h2>
+        <p className="text-lg text-gray-700 bg-gradient-to-r from-purple-50 to-pink-50 rounded-lg p-3 border border-purple-100">
+          {result.message}
+        </p>
       </div>
 
       <div>
-        <h3 className="font-semibold text-gray-700 mb-4 text-center">
-          {t("suggestedNamesTitle")}
-        </h3>
-        <div className="grid gap-3">
-          {result.names.map((name, index) => (
-            <div
-              key={index}
-              className="bg-gradient-to-r from-purple-50 to-pink-50 border border-purple-200 rounded-lg p-4 text-center transform hover:scale-105 transition-transform"
-            >
-              <span className="text-lg font-semibold text-purple-700">
-                {name}
-              </span>
-            </div>
-          ))}
+        <div className="flex items-center justify-between mb-6">
+          <h3 className="text-xl font-semibold text-gray-900">
+            {t("suggestedNamesTitle")}
+          </h3>
+          <div className="text-sm text-gray-500 bg-gray-100 px-3 py-1 rounded-full">
+            {result.names.length} names
+          </div>
         </div>
+
+        <ul className="grid gap-4" role="list">
+          {result.names.map((name, index) => (
+            <li
+              key={index}
+              className="group bg-gradient-to-r from-purple-50 to-pink-50 border-2 border-purple-200 rounded-xl p-4 hover:shadow-lg transition-all duration-300 hover:scale-[1.02] relative overflow-hidden"
+            >
+              <div className="absolute inset-0 bg-gradient-to-r from-purple-500/5 to-pink-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+
+              <div className="relative flex items-center space-x-3">
+                <div className="size-8 bg-white rounded-full flex items-center justify-center text-sm font-bold text-purple-600 shadow-sm">
+                  {index + 1}
+                </div>
+                <span className="text-xl font-bold text-purple-800 group-hover:text-purple-900 transition-colors">
+                  {name}
+                </span>
+              </div>
+            </li>
+          ))}
+        </ul>
       </div>
 
-      <button
-        onClick={onReset}
-        className="w-full bg-gray-100 text-gray-700 font-medium py-3 px-6 rounded-xl hover:bg-gray-200 transition-colors"
-      >
-        {t("tryAnotherButton")}
-      </button>
-    </div>
+      <div>
+        <button
+          onClick={onReset}
+          className="w-full bg-gradient-to-r from-gray-100 to-gray-200 text-gray-800 font-medium py-4 px-6 rounded-xl 
+                   hover:from-gray-200 hover:to-gray-300 focus:from-gray-200 focus:to-gray-300 transition-all duration-200
+                   focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 transform hover:scale-[1.02]"
+        >
+          {t("tryAnotherButton")}
+        </button>
+      </div>
+    </section>
   );
 }

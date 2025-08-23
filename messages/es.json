@@ -5,7 +5,13 @@
   },
   "EmptyState": {
     "title": "¡Sube una foto para empezar!",
-    "description": "El nombre perfecto podría estar a un solo upload de distancia."
+    "description": "El nombre perfecto podría estar a un solo upload de distancia.",
+    "steps": {
+      "upload": "Sube la foto de tu mascota",
+      "analyze": "La IA analiza características únicas",
+      "results": "Obtén sugerencias de nombres perfectos"
+    },
+    "encouragement": "✨ Únete a miles de padres de mascotas felices que encontraron el nombre perfecto"
   },
   "ResultsDisplay": {
     "title": "Grandes ideas de nombres para tu mascota",
@@ -25,6 +31,41 @@
     "instantResults": {
       "title": "Resultados rápidos",
       "description": "Recibe múltiples opciones creativas en segundos, listas para tu nuevo amigo."
+    },
+    "howItWorks": {
+      "title": "Cómo funciona",
+      "subtitle": "Nuestro sistema impulsado por IA analiza las características únicas de tu mascota para sugerir nombres perfectos que coincidan con su personalidad y apariencia."
+    },
+    "whyChoose": {
+      "title": "¿Por qué elegir nuestro generador de nombres?",
+      "subtitle": "Construido con la última tecnología de IA y diseñado para amantes de las mascotas que buscan el nombre perfecto para sus amigos peludos."
+    },
+    "additionalFeatures": {
+      "privacy": {
+        "title": "Privacidad protegida",
+        "description": "Tus fotos se procesan de forma segura y nunca se almacenan permanentemente"
+      },
+      "multiLanguage": {
+        "title": "Multiidioma",
+        "description": "Disponible en 6 idiomas con nombres culturalmente apropiados"
+      },
+      "smartUpload": {
+        "title": "Carga inteligente",
+        "description": "Arrastra y suelta o haz clic para cargar — compatible con todos los formatos de imagen"
+      },
+      "lightningFast": {
+        "title": "Súper rápido",
+        "description": "Obtén resultados en segundos con nuestro procesamiento de IA optimizado"
+      }
+    },
+    "callToAction": {
+      "title": "¿Listo para encontrar el nombre perfecto?",
+      "description": "Sube la foto de tu mascota y descubre nombres hermosos que capturen su personalidad única en segundos.",
+      "badges": {
+        "free": "✨ Gratis para usar",
+        "secure": "🔒 Seguro y privado",
+        "instant": "⚡ Resultados instantáneos"
+      }
     }
   },
   "Metadata": {
@@ -66,6 +107,8 @@
     "selectLanguage": "Seleccionar idioma"
   },
   "PetNameForm": {
+    "title": "Sube la foto de tu mascota",
+    "description": "Nuestra IA analizará las características de tu mascota y sugerirá nombres perfectos",
     "successMessage": "¡Genial — nombres generados!",
     "errors": {
       "noImage": "Por favor selecciona una imagen de tu mascota para generar nombres.",

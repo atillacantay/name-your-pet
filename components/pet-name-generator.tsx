@@ -13,7 +13,7 @@ export default function PetNameGenerator() {
   const handleResult = (newResult: GeneratedResult) => {
     setResult(newResult);
     if (ref.current) {
-      ref.current.scrollIntoView({ behavior: "smooth" });
+      ref.current.scrollIntoView({ behavior: "smooth", block: "center" });
     }
   };
 
@@ -22,15 +22,23 @@ export default function PetNameGenerator() {
   };
 
   return (
-    <div className="grid lg:grid-cols-2 gap-8">
-      <PetNameForm onResult={handleResult} />
+    <div className="mb-16">
+      <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
+        <div>
+          <PetNameForm onResult={handleResult} />
+        </div>
 
-      <div ref={ref} className="bg-white rounded-2xl shadow-xl p-8">
-        {result ? (
-          <ResultsDisplay result={result} onReset={handleReset} />
-        ) : (
-          <EmptyState />
-        )}
+        <div ref={ref}>
+          <div className="bg-white rounded-2xl shadow-xl p-8 border border-gray-100 relative overflow-hidden">
+            <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-purple-500 via-pink-500 to-indigo-500"></div>
+
+            {result ? (
+              <ResultsDisplay result={result} onReset={handleReset} />
+            ) : (
+              <EmptyState />
+            )}
+          </div>
+        </div>
       </div>
     </div>
   );

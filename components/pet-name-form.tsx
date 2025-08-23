@@ -74,8 +74,21 @@ export default function PetNameForm({ onResult }: PetNameFormProps) {
   };
 
   return (
-    <div className="bg-white rounded-2xl shadow-xl p-8">
-      <form onSubmit={handleSubmit} className="space-y-6">
+    <section
+      className="bg-white rounded-2xl shadow-xl p-8 border border-gray-100 relative overflow-hidden"
+      role="main"
+      aria-labelledby="form-heading"
+    >
+      <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-purple-500 via-pink-500 to-indigo-500"></div>
+
+      <div className="mb-8 text-center">
+        <h2 id="form-heading" className="text-2xl font-bold text-gray-900 mb-2">
+          {t("title")}
+        </h2>
+        <p className="text-gray-600">{t("description")}</p>
+      </div>
+
+      <form onSubmit={handleSubmit} className="space-y-8" noValidate>
         <ImageUpload
           selectedImage={selectedImage}
           imagePreview={imagePreview}
@@ -91,6 +104,6 @@ export default function PetNameForm({ onResult }: PetNameFormProps) {
           disabled={!selectedImage || isLoading}
         />
       </form>
-    </div>
+    </section>
   );
 }
