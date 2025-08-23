@@ -1,0 +1,16 @@
+import type { Ratelimit } from "@upstash/ratelimit";
+import { headers } from "next/headers";
+import "server-only";
+
+export async function getIpAddress() {
+  const headersList = await headers();
+  const forwardedFor = headersList.get("x-forwarded-for");
+  return forwardedFor ? forwardedFor.split(",")[0].trim() : "Unknown";
+}
+
+export async function checkRateLimit(ratelimit: Ratelimit) {
+  const ip = await getIpAddress();
+  console.log(`Client IP Address: ${ip}`);
+
+  return await ratelimit.limit(ip);
+}

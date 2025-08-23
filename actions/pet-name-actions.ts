@@ -3,9 +3,23 @@
 import { PetNameResponse } from "@/app/types";
 import { config } from "@/config";
 import { generateNames } from "@/lib/generate-name";
+import { checkRateLimit } from "@/lib/rate-limit";
 import { validateFileSize, validateFileType } from "@/utils/file-utils";
+import { Ratelimit } from "@upstash/ratelimit";
+import { Redis } from "@upstash/redis";
 import { getLocale, getTranslations } from "next-intl/server";
 import { verifyRecaptcha } from "./recaptcha-actions";
+
+const redis = Redis.fromEnv();
+
+const ratelimit = new Ratelimit({
+  redis,
+  limiter: Ratelimit.slidingWindow(20, "1 m"),
+  analytics: true,
+  enableProtection: true,
+  ephemeralCache: new Map(),
+  prefix: "server-action-ratelimit",
+});
 
 export async function generatePetName(
   formData: FormData
@@ -62,6 +76,16 @@ export async function generatePetName(
   }
 
   try {
+    const { success } = await checkRateLimit(ratelimit);
+    if (!success) {
+      return {
+        success: false,
+        names: [],
+        message: "",
+        error: t("errors.rateLimited"),
+      };
+    }
+
     const backendFormData = new FormData();
     backendFormData.append("image", image);
     const names = await generateNames(image, locale);
