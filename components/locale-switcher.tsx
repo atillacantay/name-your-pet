@@ -2,7 +2,6 @@
 
 import { setCookiesLocale } from "@/actions/get-locale";
 import { locales } from "@/i18n/config";
-import { trackLocaleChange } from "@/utils/gtm-events";
 import { ChevronDown, Globe } from "lucide-react";
 import { type Locale, useLocale, useTranslations } from "next-intl";
 import { useTransition } from "react";
@@ -16,7 +15,6 @@ export function LocaleSwitcher() {
     const newLocale = event.target.value as Locale;
 
     startTransition(async () => {
-      trackLocaleChange(locale, newLocale);
       await setCookiesLocale(newLocale);
       window.location.reload();
     });
