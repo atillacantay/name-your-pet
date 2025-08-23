@@ -14,7 +14,10 @@ const redis = Redis.fromEnv();
 
 const ratelimit = new Ratelimit({
   redis,
-  limiter: Ratelimit.slidingWindow(20, "1 m"),
+  limiter: Ratelimit.slidingWindow(
+    config.rateLimit.maxRequests,
+    `${config.rateLimit.windowMs}ms`
+  ),
   analytics: true,
   enableProtection: true,
   ephemeralCache: new Map(),
