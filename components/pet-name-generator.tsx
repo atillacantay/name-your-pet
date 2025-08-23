@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef, useState } from "react";
-import { GeneratedResult } from "../app/types";
+import { GeneratedResult } from "../types";
 import EmptyState from "./empty-state";
 import PetNameForm from "./pet-name-form";
 import ResultsDisplay from "./results-display";

@@ -1,5 +1,5 @@
-import { ImageToTextResponse } from "@/app/types";
 import { config } from "@/config";
+import { ImageToTextResponse } from "@/types";
 import { getFallbackNames } from "../utils/prompt-utils";
 
 export class AiService {
@@ -79,7 +79,7 @@ export class AiService {
         }
       );
 
-      const result = (await response.json()) as any;
+      const result = await response.json();
       const text = result.result?.response || "";
 
       const names = this.parseNames(text);

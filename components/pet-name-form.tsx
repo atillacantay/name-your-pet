@@ -4,7 +4,7 @@ import { generatePetName } from "@/actions/pet-name-actions";
 import { config } from "@/config";
 import { useTranslations } from "next-intl";
 import React, { useState } from "react";
-import { GeneratedResult } from "../app/types";
+import { GeneratedResult } from "../types";
 import ErrorDisplay from "./error-display";
 import ImageUpload from "./image-upload";
 import RecaptchaWrapper, { executeRecaptcha } from "./recaptcha-wrapper";

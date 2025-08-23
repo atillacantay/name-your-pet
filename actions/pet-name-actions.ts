@@ -1,9 +1,9 @@
 "use server";
 
-import { PetNameResponse } from "@/app/types";
 import { config } from "@/config";
 import { generateNames } from "@/lib/generate-name";
 import { checkRateLimit } from "@/lib/rate-limit";
+import { PetNameResponse } from "@/types";
 import { validateFileSize, validateFileType } from "@/utils/file-utils";
 import { Ratelimit } from "@upstash/ratelimit";
 import { Redis } from "@upstash/redis";

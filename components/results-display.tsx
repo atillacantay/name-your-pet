@@ -2,7 +2,7 @@
 
 import { Sparkles } from "lucide-react";
 import { useTranslations } from "next-intl";
-import { GeneratedResult } from "../app/types";
+import { GeneratedResult } from "../types";
 
 interface ResultsDisplayProps {
   result: GeneratedResult;
