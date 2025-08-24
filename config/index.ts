@@ -38,6 +38,8 @@ export const config = {
     temperature: 0.8,
   },
 
+  namesPerGeneration,
+
   // AI Prompts (English only)
   prompts: {
     imageAnalysis: `Analyze this pet photo and provide a detailed description using the following structure:

@@ -25,7 +25,7 @@ export class AiService {
           body: JSON.stringify({
             image: [...new Uint8Array(buffer)],
             prompt: config.prompts.imageAnalysis,
-            max_tokens: 150,
+            max_tokens: 500,
           }),
         }
       );
@@ -51,10 +51,37 @@ export class AiService {
   }
 
   parseNames(text: string): string[] {
-    return text
+    // Clean up the text by removing markdown formatting and common prefixes
+    let cleanText = text
+      .replace(/\*\*/g, "") // Remove bold markdown
+      .replace(/\*/g, "") // Remove italic markdown
+      .replace(/`/g, "") // Remove backticks
+      .replace(/^(OUTPUT:|Names:|Result:)/i, "") // Remove common prefixes
+      .trim();
+
+    // Split by newlines and take only the first line (remove explanations/notes)
+    const firstLine = cleanText.split("\n")[0].trim();
+
+    // Remove any parenthetical explanations or notes that might be on the same line
+    const namesOnly = firstLine
+      .replace(/\(.*?\)/g, "") // Remove anything in parentheses
+      .replace(/\[.*?\]/g, "") // Remove anything in square brackets
+      .replace(/\s*-\s*.*$/, "") // Remove everything after a dash
+      .replace(/\s*:\s*.*$/, "") // Remove everything after a colon
+      .replace(/\s*\.\s*.*$/, "") // Remove everything after a period followed by text
+      .trim();
+
+    return namesOnly
       .split(",")
       .map((name: string) => name.trim())
-      .filter((name: string) => name.length > 1 && name.length < 20);
+      .filter(
+        (name: string) =>
+          name.length > 1 &&
+          name.length < 20 &&
+          /^[a-zA-ZÀ-ÿ\u0100-\u017F\u4e00-\u9fff\u0400-\u04FF\u0590-\u05FF\u0600-\u06FF\u1E00-\u1EFF]+$/.test(
+            name
+          )
+      );
   }
 
   async generatePetNames(
@@ -84,7 +111,9 @@ export class AiService {
       console.info(result.result);
       const names = this.parseNames(text);
 
-      return names.length >= 3 ? names.slice(0, 3) : getFallbackNames(locale);
+      return names.length >= 2
+        ? names.slice(0, config.namesPerGeneration)
+        : getFallbackNames(locale);
     } catch (error) {
       console.error("Name generation failed:", error);
       return getFallbackNames(locale);
