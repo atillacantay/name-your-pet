@@ -25,8 +25,8 @@ export const config = {
 
   // Cloudflare AI model configurations
   models: {
-    imageToText: "@cf/unum/uform-gen2-qwen-500m",
-    textGeneration: "@cf/meta/llama-3.1-8b-instruct",
+    imageToText: process.env.NEXT_PUBLIC_IMAGE_TO_TEXT_MODEL,
+    textGeneration: process.env.NEXT_PUBLIC_TEXT_GENERATION_MODEL,
   },
 
   // Text generation parameters
