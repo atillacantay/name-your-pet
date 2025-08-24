@@ -40,7 +40,7 @@ export async function generateMetadata(): Promise<Metadata> {
       locale,
       images: [
         {
-          url: "/og-image.jpg",
+          url: "/og-image.png",
           width: 1200,
           height: 630,
           alt: t("openGraph.title"),
@@ -51,8 +51,8 @@ export async function generateMetadata(): Promise<Metadata> {
       card: "summary_large_image",
       title: t("twitter.title"),
       description: t("twitter.description"),
-      images: ["/og-image.jpg"], // Same image as Open Graph
-      creator: "@petnamegen", // Replace with your Twitter handle
+      images: ["/og-image.png"],
+      creator: "@name_your_pet",
     },
     robots: {
       index: true,
