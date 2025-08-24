@@ -12,5 +12,10 @@ export async function checkRateLimit(ratelimit: Ratelimit) {
   const ip = await getIpAddress();
   console.log(`Client IP Address: ${ip}`);
 
-  return await ratelimit.limit(ip);
+  const result = await ratelimit.limit(ip);
+  if (result.success === false) {
+    console.log(`Rate limit exceeded for IP: ${ip}`);
+  }
+
+  return result;
 }
