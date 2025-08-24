@@ -1,3 +1,6 @@
+const namesPerGeneration =
+  Number(process.env.NEXT_PUBLIC_NAMES_PER_GENERATION) || 3;
+
 export const config = {
   baseUrl: process.env.NEXT_PUBLIC_SITE_URL || "https://localhost:3000",
 
@@ -55,38 +58,38 @@ Focus only on the pet itself. Be factual and specific. This description will be 
 
     nameGeneration: (description: string, locale: string = "en") => {
       const localeInstructions = {
-        en: `Generate exactly 3 creative pet names following these rules:
+        en: `Generate exactly ${namesPerGeneration} creative pet names following these rules:
 - Single words only
 - Easy to pronounce
 - Memorable and unique
 - Suitable for calling out loud
 - Appropriate for all ages`,
 
-        de: `Generate exactly 3 creative pet names for German-speaking owners:
+        de: `Generate exactly ${namesPerGeneration} creative pet names for German-speaking owners:
 - Single German words or German-friendly names
 - Consider German pronunciation
 - May include umlauts (ä, ö, ü)
 - Reflect German naming traditions`,
 
-        es: `Generate exactly 3 creative pet names for Spanish-speaking owners:
+        es: `Generate exactly ${namesPerGeneration} creative pet names for Spanish-speaking owners:
 - Single Spanish words or Spanish-friendly names
 - Consider Spanish pronunciation and accent marks
 - May reflect Latin American or Spanish culture
 - Warm and affectionate tone`,
 
-        fr: `Generate exactly 3 creative pet names for French-speaking owners:
+        fr: `Generate exactly ${namesPerGeneration} creative pet names for French-speaking owners:
 - Single French words or French-style names
 - Consider French pronunciation
 - May include accents (é, è, ê, etc.)
 - Elegant or charming character`,
 
-        zh: `Generate exactly 3 creative pet names for Chinese-speaking owners:
+        zh: `Generate exactly ${namesPerGeneration} creative pet names for Chinese-speaking owners:
 - Use pinyin romanization or English names popular in China
 - Consider meaning and lucky associations
 - Easy for Chinese speakers to pronounce
 - Positive connotations`,
 
-        tr: `Generate exactly 3 creative pet names for Turkish-speaking owners:
+        tr: `Generate exactly ${namesPerGeneration} creative pet names for Turkish-speaking owners:
 - Single Turkish words or Turkish-friendly names
 - Consider Turkish pronunciation
 - May reflect Turkish culture and traditions
@@ -108,7 +111,7 @@ Consider the pet's:
 - Any unique features mentioned
 
 CRITICAL REQUIREMENTS:
-- Output EXACTLY 3 names only
+- Output EXACTLY ${namesPerGeneration} names only
 - Separate with commas
 - NO explanations, NO prefixes, NO suffixes
 - Each name must be a SINGLE WORD
