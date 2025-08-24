@@ -52,7 +52,7 @@ export class AiService {
 
   parseNames(text: string): string[] {
     // Clean up the text by removing markdown formatting and common prefixes
-    let cleanText = text
+    const cleanText = text
       .replace(/\*\*/g, "") // Remove bold markdown
       .replace(/\*/g, "") // Remove italic markdown
       .replace(/`/g, "") // Remove backticks
