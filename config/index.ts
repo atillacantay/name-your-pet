@@ -31,7 +31,7 @@ export const config = {
 
   // Text generation parameters
   textGenerationParams: {
-    max_tokens: 150,
+    max_tokens: 300,
     temperature: 0.8,
   },
 
@@ -133,6 +133,9 @@ OUTPUT FORMAT: Name1, Name2, Name3`;
 
   // Rate limiting configuration
   rateLimit: {
+    enabled:
+      process.env.NODE_ENV === "production" &&
+      process.env.NEXT_PUBLIC_ENABLE_RATE_LIMITING === "true",
     windowMs: 24 * 60 * 60 * 1000, // 24 hours (daily limit)
     maxRequests: Number(process.env.RATE_LIMIT_MAX_REQUESTS) || 3, // Maximum 3 requests per IP per day
     message:

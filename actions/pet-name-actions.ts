@@ -10,19 +10,23 @@ import { Redis } from "@upstash/redis";
 import { getLocale, getTranslations } from "next-intl/server";
 import { verifyRecaptcha } from "./recaptcha-actions";
 
-const redis = Redis.fromEnv();
+let ratelimit: Ratelimit;
 
-const ratelimit = new Ratelimit({
-  redis,
-  limiter: Ratelimit.slidingWindow(
-    config.rateLimit.maxRequests,
-    `${config.rateLimit.windowMs}ms`
-  ),
-  analytics: true,
-  enableProtection: true,
-  ephemeralCache: new Map(),
-  prefix: "server-action-ratelimit",
-});
+if (config.rateLimit.enabled) {
+  const redis = Redis.fromEnv();
+
+  ratelimit = new Ratelimit({
+    redis,
+    limiter: Ratelimit.slidingWindow(
+      config.rateLimit.maxRequests,
+      `${config.rateLimit.windowMs}ms`
+    ),
+    analytics: true,
+    enableProtection: true,
+    ephemeralCache: new Map(),
+    prefix: "server-action-ratelimit",
+  });
+}
 
 export async function generatePetName(
   formData: FormData
@@ -79,14 +83,16 @@ export async function generatePetName(
   }
 
   try {
-    const { success } = await checkRateLimit(ratelimit);
-    if (!success) {
-      return {
-        success: false,
-        names: [],
-        message: "",
-        error: t("errors.rateLimited"),
-      };
+    if (config.rateLimit.enabled) {
+      const { success } = await checkRateLimit(ratelimit);
+      if (!success) {
+        return {
+          success: false,
+          names: [],
+          message: "",
+          error: t("errors.rateLimited"),
+        };
+      }
     }
 
     const backendFormData = new FormData();

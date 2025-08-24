@@ -81,7 +81,7 @@ export class AiService {
 
       const result = await response.json();
       const text = result.result?.response || "";
-
+      console.info(result.result);
       const names = this.parseNames(text);
 
       return names.length >= 3 ? names.slice(0, 3) : getFallbackNames(locale);
